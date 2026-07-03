@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>每日10個英文單字挑戰</title>
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --success: #16a34a;
+      --danger: #dc2626;
+      --warning: #f59e0b;
+      --line: #e5e7eb;
+      --game: #111827;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", sans-serif;
+      background: radial-gradient(circle at top, #dbeafe 0, #f6f7fb 45%, #ffffff 100%);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 28px 16px 12px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(28px, 5vw, 44px);
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin: 10px auto 0;
+      color: var(--muted);
+      max-width: 800px;
+      line-height: 1.7;
+    }
+
+    .app {
+      width: min(980px, calc(100% - 28px));
+      margin: 0 auto 40px;
+    }
+
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin: 18px 0;
+    }
+
+    .stat {
+      background: rgba(255,255,255,0.88);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 14px;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+    }
+
+    .stat b {
+      display: block;
+      font-size: 22px;
+      margin-bottom: 4px;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.95);
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      padding: clamp(18px, 4vw, 34px);
+      box-shadow: 0 18px 48px rgba(15, 23, 42, 0.10);
+      overflow: hidden;
+    }
+
+    .progress-wrap {
+      width: 100%;
+      height: 12px;
+      background: #e5e7eb;
+      border-radius: 999px;
+      overflow: hidden;
+      margin-bottom: 24px;
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #60a5fa, #2563eb, #7c3aed);
+      border-radius: 999px;
+      transition: width 0.35s ease;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 12px;
+      background: #eff6ff;
+      color: #1d4ed8;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    .word {
+      font-size: clamp(44px, 10vw, 78px);
+      font-weight: 900;
+      line-height: 1;
+      margin: 4px 0 10px;
+      color: #111827;
+      letter-spacing: 1px;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 10px 0 18px;
+    }
+
+    .meta span {
+      background: #f1f5f9;
+      color: #334155;
+      border: 1px solid #e2e8f0;
+      padding: 7px 10px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .forms {
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
+      color: #9a3412;
+      padding: 12px 14px;
+      border-radius: 16px;
+      line-height: 1.7;
+      margin: 14px 0;
+      font-weight: 700;
+    }
+
+    .meaning {
+      font-size: 24px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .sentence {
+      font-size: 20px;
+      line-height: 1.6;
+      background: #f9fafb;
+      border: 1px dashed #cbd5e1;
+      padding: 16px;
+      border-radius: 18px;
+      margin: 16px 0;
+    }
+
+    .sentence small {
+      display: block;
+      color: #475569;
+      margin-top: 6px;
+      font-size: 17px;
+      font-weight: 700;
+    }
+
+    .hint {
+      color: var(--muted);
+      line-height: 1.7;
+      margin: 8px 0 18px;
+    }
+
+    .btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    button {
+      border: 0;
+      border-radius: 14px;
+      padding: 12px 18px;
+      font-size: 16px;
+      font-weight: 800;
+      cursor: pointer;
+      background: var(--primary);
+      color: white;
+      box-shadow: 0 9px 16px rgba(37, 99, 235, 0.20);
+      transition: transform 0.1s ease, background 0.2s ease, opacity 0.2s ease;
+    }
+
+    button:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+
+    button.secondary {
+      background: #e5e7eb;
+      color: #111827;
+      box-shadow: none;
+    }
+
+    button.success {
+      background: var(--success);
+    }
+
+    button.warning {
+      background: var(--warning);
+    }
+
+    button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .learn-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .mini-card {
+      border: 1px solid #e5e7eb;
+      border-radius: 18px;
+      padding: 16px;
+      background: #fbfdff;
+    }
+
+    .mini-card b {
+      font-size: 24px;
+    }
+
+    .mini-card .ipa {
+      color: #64748b;
+      font-weight: 700;
+      margin: 4px 0;
+    }
+
+    .mini-card .zh {
+      color: #334155;
+      font-weight: 800;
+      margin-top: 4px;
+    }
+
+    .mini-card .small-sentence {
+      color: #475569;
+      font-size: 14px;
+      line-height: 1.5;
+      margin-top: 8px;
+      border-top: 1px solid #e5e7eb;
+      padding-top: 8px;
+    }
+
+    .choice-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin: 18px 0;
+    }
+
+    .choice {
+      background: #f8fafc;
+      color: #111827;
+      border: 2px solid #e5e7eb;
+      box-shadow: none;
+      text-align: left;
+    }
+
+    .choice:hover {
+      background: #eff6ff;
+      border-color: #93c5fd;
+    }
+
+    .choice.correct {
+      background: #dcfce7;
+      border-color: #22c55e;
+      color: #14532d;
+    }
+
+    .choice.wrong {
+      background: #fee2e2;
+      border-color: #ef4444;
+      color: #7f1d1d;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 16px;
+      font-size: 24px;
+      border: 2px solid #cbd5e1;
+      border-radius: 16px;
+      outline: none;
+      margin: 14px 0 6px;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    input[type="text"]:focus {
+      border-color: #2563eb;
+      box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+    }
+
+    .answer-box {
+      background: #ecfeff;
+      border: 2px solid #67e8f9;
+      color: #155e75;
+      border-radius: 18px;
+      padding: 14px 16px;
+      font-weight: 900;
+      font-size: 22px;
+      margin: 16px 0;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+
+    .feedback {
+      min-height: 32px;
+      font-weight: 800;
+      margin-top: 12px;
+      line-height: 1.6;
+    }
+
+    .feedback.ok {
+      color: var(--success);
+    }
+
+    .feedback.no {
+      color: var(--danger);
+    }
+
+    .feedback.info {
+      color: #0369a1;
+    }
+
+    .finish {
+      text-align: center;
+    }
+
+    .finish h2 {
+      font-size: clamp(30px, 6vw, 56px);
+      margin: 0 0 12px;
+    }
+
+    .finish p {
+      font-size: 20px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .confetti {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    #gameSection {
+      display: none;
+      margin-top: 22px;
+    }
+
+    .game-panel {
+      background: var(--game);
+      color: white;
+      border-radius: 24px;
+      padding: 16px;
+      box-shadow: 0 18px 48px rgba(17, 24, 39, 0.22);
+    }
+
+    .game-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+
+    .game-top b {
+      font-size: 18px;
+    }
+
+    canvas {
+      width: 100%;
+      max-width: 900px;
+      background: linear-gradient(#38bdf8, #bfdbfe 55%, #1f2937 55%, #111827);
+      border-radius: 18px;
+      display: block;
+      margin: 0 auto;
+      touch-action: manipulation;
+    }
+
+    .small {
+      color: #d1d5db;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .word-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+      margin-top: 18px;
+      text-align: left;
+    }
+
+    .word-pill {
+      background: #f8fafc;
+      border: 1px solid #e5e7eb;
+      padding: 10px 12px;
+      border-radius: 12px;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 900px) {
+      .review-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 720px) {
+      .dashboard {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .choice-grid, .learn-grid, .review-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .word-list {
+        grid-template-columns: 1fr;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>每日10個英文單字挑戰</h1>
+    <p>每次學 5 個字，先選意思，再把 5 個字同時看一次，最後做這 5 個字的拼字測驗。完成今天的10個單字，就能解鎖跑酷小遊戲！</p>
+  </header>
+
+  <main class="app">
+    <section class="dashboard">
+      <div class="stat"><b id="todayCount">10</b><span>今日單字</span></div>
+      <div class="stat"><b id="wordIndex">1 / 10</b><span>目前進度</span></div>
+      <div class="stat"><b id="score">0</b><span>答對次數</span></div>
+      <div class="stat"><b id="stageName">學習</b><span>學習階段</span></div>
+    </section>
+
+    <section class="card" id="learningCard">
+      <div class="progress-wrap">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+
+      <div id="content"></div>
+      <div class="feedback" id="feedback"></div>
+    </section>
+
+    <section id="gameSection">
+      <div class="game-panel">
+        <div class="game-top">
+          <div>
+            <b>單字跑酷獎勵關卡</b>
+            <div class="small">電腦按空白鍵或 ↑ 跳躍；手機點一下畫面跳躍。避開障礙物，拿到星星加分！</div>
+          </div>
+          <div>
+            <b>分數：<span id="gameScore">0</span></b>
+            <button class="warning" id="restartGameBtn">重新開始</button>
+          </div>
+        </div>
+        <canvas id="gameCanvas" width="900" height="420"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const wordBank = [
+      {
+      word: "January",
+      ipa: "/ˈdʒænjuˌeri/",
+      pos: "名詞 n.",
+      zh: "一月",
+      sentence: "January is cold.",
+      sentenceZh: "一月很冷。"
+    },
+    {
+      word: "February",
+      ipa: "/ˈfebruˌeri/",
+      pos: "名詞 n.",
+      zh: "二月",
+      sentence: "February is short.",
+      sentenceZh: "二月很短。"
+    },
+    {
+      word: "March",
+      ipa: "/mɑːrtʃ/",
+      pos: "名詞 n.",
+      zh: "三月",
+      sentence: "March is warm.",
+      sentenceZh: "三月很溫暖。"
+    },
+    {
+      word: "April",
+      ipa: "/ˈeɪprəl/",
+      pos: "名詞 n.",
+      zh: "四月",
+      sentence: "April has rain.",
+      sentenceZh: "四月會下雨。"
+    },
+    {
+      word: "May",
+      ipa: "/meɪ/",
+      pos: "名詞 n.",
+      zh: "五月",
+      sentence: "May is nice.",
+      sentenceZh: "五月很好。"
+    },
+    {
+      word: "June",
+      ipa: "/dʒuːn/",
+      pos: "名詞 n.",
+      zh: "六月",
+      sentence: "June is hot.",
+      sentenceZh: "六月很熱。"
+    },
+    {
+      word: "July",
+      ipa: "/dʒuˈlaɪ/",
+      pos: "名詞 n.",
+      zh: "七月",
+      sentence: "July is summer.",
+      sentenceZh: "七月是夏天。"
+    },
+    {
+      word: "August",
+      ipa: "/ˈɔːɡəst/",
+      pos: "名詞 n.",
+      zh: "八月",
+      sentence: "August is sunny.",
+      sentenceZh: "八月陽光充足。"
+    },
+    {
+      word: "September",
+      ipa: "/sepˈtembər/",
+      pos: "名詞 n.",
+      zh: "九月",
+      sentence: "School starts in September.",
+      sentenceZh: "學校在九月開學。"
+    },
+    {
+      word: "October",
+      ipa: "/ɑːkˈtoʊbər/",
+      pos: "名詞 n.",
+      zh: "十月",
+      sentence: "October is cool.",
+      sentenceZh: "十月很涼爽。"
+    }
+    ];
+
+    const groupSize = 5;
+    let mode = "groupLearn";
+    let groupStart = 0;
+    let learnPointer = 0;
+    let quizOrder = [];
+    let quizPointer = 0;
+    let spellOrder = [];
+    let spellPointer = 0;
+    let score = 0;
+    let spellingTries = 0;
+    let answerShown = false;
+    let locked = false;
+
+    const content = document.getElementById("content");
+    const feedback = document.getElementById("feedback");
+    const wordIndex = document.getElementById("wordIndex");
+    const scoreEl = document.getElementById("score");
+    const stageName = document.getElementById("stageName");
+    const progressBar = document.getElementById("progressBar");
+
+    function escapeAttr(text) {
+      return String(text).replace(/\\/g, "\\\\").replace(/'/g, "\\'").replace(/"/g, "&quot;");
+    }
+
+    function speak(text) {
+      if (!("speechSynthesis" in window)) {
+        alert("這個瀏覽器暫時不支援語音播放。");
+        return;
+      }
+      window.speechSynthesis.cancel();
+      const utter = new SpeechSynthesisUtterance(text);
+      utter.lang = "en-US";
+      utter.rate = 0.82;
+      utter.pitch = 1;
+      window.speechSynthesis.speak(utter);
+    }
+
+    function shuffle(arr) {
+      return [...arr].sort(() => Math.random() - 0.5);
+    }
+
+    function currentGroupEnd() {
+      return Math.min(groupStart + groupSize, wordBank.length);
+    }
+
+    function groupIndices() {
+      return [...Array(currentGroupEnd() - groupStart).keys()].map(i => groupStart + i);
+    }
+
+    function updateTop() {
+      let displayIndex = 1;
+      if (mode === "groupLearn") displayIndex = learnPointer + 1;
+      else if (mode === "meaningQuiz") displayIndex = groupStart + quizPointer + 1;
+      else if (mode === "groupReview") displayIndex = currentGroupEnd();
+      else if (mode === "spellQuiz") displayIndex = groupStart + spellPointer + 1;
+      else displayIndex = wordBank.length;
+
+      wordIndex.textContent = `${Math.min(displayIndex, wordBank.length)} / 10`;
+      scoreEl.textContent = score;
+
+      if (mode === "groupLearn") stageName.textContent = "學習";
+      else if (mode === "meaningQuiz") stageName.textContent = "選意思";
+      else if (mode === "groupReview") stageName.textContent = "再記一次";
+      else if (mode === "spellQuiz") stageName.textContent = "拼單字";
+      else stageName.textContent = "完成";
+
+      const groupNo = Math.floor(groupStart / groupSize);
+      const groupBase = groupNo * 50;
+      const withinGroupCount = currentGroupEnd() - groupStart;
+      let progress = 0;
+
+      if (mode === "groupLearn") {
+        progress = groupBase + ((learnPointer - groupStart) / withinGroupCount) * 15;
+      } else if (mode === "meaningQuiz") {
+        progress = groupBase + 15 + (quizPointer / withinGroupCount) * 15;
+      } else if (mode === "groupReview") {
+        progress = groupBase + 30;
+      } else if (mode === "spellQuiz") {
+        progress = groupBase + 32 + (spellPointer / withinGroupCount) * 18;
+      } else {
+        progress = 100;
+      }
+
+      progressBar.style.width = `${Math.min(100, progress)}%`;
+    }
+
+    function clearFeedback() {
+      feedback.textContent = "";
+      feedback.className = "feedback";
+    }
+
+    function verbFormsHtml(item) {
+      if (!item.forms) return "";
+      return `
+        <div class="forms">
+          動詞變化：現在分詞 ${item.forms.ing} ／ 過去式 ${item.forms.past} ／ 過去分詞 ${item.forms.pp}
+        </div>
+      `;
+    }
+
+    function wordInfoHtml(item, showForms = true) {
+      return `
+        <div class="word">${item.word}</div>
+        <div class="meta">
+          <span>音標 ${item.ipa}</span>
+          <span>${item.pos}</span>
+        </div>
+        <div class="meaning">${item.zh}</div>
+        ${showForms ? verbFormsHtml(item) : ""}
+        <div class="sentence">
+          ${item.sentence}
+          <small>${item.sentenceZh}</small>
+        </div>
+      `;
+    }
+
+    function showGroupLearn() {
+      mode = "groupLearn";
+      locked = false;
+      clearFeedback();
+      updateTop();
+
+      const item = wordBank[learnPointer];
+      const groupNo = Math.floor(groupStart / groupSize) + 1;
+      const groupEnd = currentGroupEnd();
+
+      content.innerHTML = `
+        <div class="tag">第 ${groupNo} 組單字：先學第 ${learnPointer - groupStart + 1} / ${groupEnd - groupStart} 個</div>
+        ${wordInfoHtml(item, true)}
+        <p class="hint">請看音標、詞性、例句和動詞變化。這一組 5 個字學完後，才會一起測驗。</p>
+        <div class="btns">
+          <button onclick="speak('${escapeAttr(item.word)}')">播放單字發音</button>
+          <button class="secondary" onclick="speak('${escapeAttr(item.sentence)}')">播放例句</button>
+          <button class="success" onclick="nextLearnWord()">下一個單字</button>
+        </div>
+      `;
+    }
+
+    function nextLearnWord() {
+      learnPointer++;
+      if (learnPointer < currentGroupEnd()) {
+        showGroupLearn();
+      } else {
+        startMeaningQuiz();
+      }
+    }
+
+    function startMeaningQuiz() {
+      mode = "meaningQuiz";
+      quizOrder = shuffle(groupIndices());
+      quizPointer = 0;
+      showMeaningQuiz();
+    }
+
+    function showMeaningQuiz() {
+      locked = false;
+      clearFeedback();
+      updateTop();
+
+      const item = wordBank[quizOrder[quizPointer]];
+      const groupItems = wordBank.slice(groupStart, currentGroupEnd());
+      const outsideItems = wordBank.filter(w => w.word !== item.word);
+      const wrongPool = shuffle([
+        ...groupItems.filter(w => w.word !== item.word).map(w => w.zh),
+        ...outsideItems.map(w => w.zh)
+      ]);
+      const options = shuffle([item.zh, ...wrongPool.slice(0, 3)]);
+
+      content.innerHTML = `
+        <div class="tag">第 ${Math.floor(groupStart / groupSize) + 1} 組小測驗：選出意思 ${quizPointer + 1} / ${quizOrder.length}</div>
+        <div class="word">${item.word}</div>
+        <div class="meta">
+          <span>音標 ${item.ipa}</span>
+          <span>${item.pos}</span>
+        </div>
+        <p class="hint">請選出這個單字的中文意思。這些題目來自剛剛學過的這一組。</p>
+        <div class="btns">
+          <button onclick="speak('${escapeAttr(item.word)}')">再聽一次</button>
+        </div>
+        <div class="choice-grid">
+          ${options.map(opt => `<button class="choice" onclick="checkMeaning(this, '${escapeAttr(opt)}')">${opt}</button>`).join("")}
+        </div>
+      `;
+    }
+
+    function checkMeaning(btn, answer) {
+      if (locked) return;
+      locked = true;
+
+      const item = wordBank[quizOrder[quizPointer]];
+      const buttons = document.querySelectorAll(".choice");
+
+      buttons.forEach(b => {
+        if (b.textContent === item.zh) b.classList.add("correct");
+        if (b === btn && answer !== item.zh) b.classList.add("wrong");
+      });
+
+      if (answer === item.zh) {
+        score++;
+        feedback.textContent = "答對了！";
+        feedback.className = "feedback ok";
+      } else {
+        feedback.textContent = `這題是「${item.zh}」。看一次答案，下一題繼續。`;
+        feedback.className = "feedback no";
+      }
+
+      updateTop();
+      setTimeout(() => {
+        quizPointer++;
+        if (quizPointer < quizOrder.length) {
+          showMeaningQuiz();
+        } else {
+          showGroupReview();
+        }
+      }, 1200);
+    }
+
+    function showGroupReview() {
+      mode = "groupReview";
+      locked = false;
+      clearFeedback();
+      updateTop();
+
+      const items = wordBank.slice(groupStart, currentGroupEnd());
+      const groupNo = Math.floor(groupStart / groupSize) + 1;
+
+      content.innerHTML = `
+        <div class="tag">第 ${groupNo} 組：拼字前再記一次</div>
+        <h2 style="margin:0 0 8px;">請再看一次這 5 個單字</h2>
+        <p class="hint">接下來會馬上測這 5 個字的拼寫。請特別記住字母順序。這裡會顯示動詞變化；但拼字測驗時會隱藏，避免提示太明顯。</p>
+        <div class="review-grid">
+          ${items.map(item => `
+            <div class="mini-card">
+              <b>${item.word}</b>
+              <div class="ipa">${item.ipa}</div>
+              <div class="zh">${item.pos}｜${item.zh}</div>
+              ${item.forms ? `<div class="small-sentence">動詞變化：${item.forms.ing}／${item.forms.past}／${item.forms.pp}</div>` : ""}
+              <div class="small-sentence">${item.sentence}<br>${item.sentenceZh}</div>
+              <div class="btns">
+                <button class="secondary" onclick="speak('${escapeAttr(item.word)}')">聽</button>
+              </div>
+            </div>
+          `).join("")}
+        </div>
+        <div class="btns">
+          <button class="success" onclick="startGroupSpellQuiz()">開始這 5 個字的拼字測驗</button>
+        </div>
+      `;
+    }
+
+    function startGroupSpellQuiz() {
+      mode = "spellQuiz";
+      spellOrder = shuffle(groupIndices());
+      spellPointer = 0;
+      spellingTries = 0;
+      answerShown = false;
+      showSpellQuiz();
+    }
+
+    function showSpellQuiz() {
+      locked = false;
+      clearFeedback();
+      updateTop();
+
+      const item = wordBank[spellOrder[spellPointer]];
+      const hiddenSentence = item.sentence.replace(new RegExp(item.word, "gi"), "_____");
+      const answerBox = answerShown ? `<div class="answer-box">答案是：${item.word}</div><p class="hint">請看著答案唸一次，然後再輸入一次這個單字。</p>` : "";
+
+      content.innerHTML = `
+        <div class="tag">第 ${Math.floor(groupStart / groupSize) + 1} 組拼寫挑戰：第 ${spellPointer + 1} / ${spellOrder.length} 題</div>
+        <div class="meaning">${item.zh}</div>
+        <div class="meta">
+          <span>音標 ${item.ipa}</span>
+          <span>${item.pos}</span>
+        </div>
+        <div class="sentence">
+          ${hiddenSentence}
+          <small>${item.sentenceZh}</small>
+        </div>
+        ${answerBox}
+        <p class="hint">請拼出這個英文單字。這裡不顯示動詞變化，避免看到大致拼法。錯 3 次會先給答案，然後讓你再拼一次。</p>
+        <input id="spellInput" type="text" autocomplete="off" placeholder="Type the word here" />
+        <div class="btns">
+          <button onclick="speak('${escapeAttr(item.word)}')">聽發音提示</button>
+          <button class="success" onclick="checkSpelling()">確認答案</button>
+          <button class="secondary" onclick="showFirstLetter()">給我提示</button>
+          ${answerShown ? `<button class="warning" onclick="speak('${escapeAttr(item.word)}')">看答案後再聽一次</button>` : ""}
+        </div>
+      `;
+
+      const input = document.getElementById("spellInput");
+      input.focus();
+      input.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") checkSpelling();
+      });
+    }
+
+    function showFirstLetter() {
+      const item = wordBank[spellOrder[spellPointer]];
+      feedback.textContent = `提示：第一個字母是 ${item.word[0].toUpperCase()}，共有 ${item.word.length} 個字母。`;
+      feedback.className = "feedback info";
+    }
+
+    function checkSpelling() {
+      if (locked) return;
+
+      const item = wordBank[spellOrder[spellPointer]];
+      const input = document.getElementById("spellInput");
+      const answer = input.value.trim().toLowerCase();
+
+      if (answer === item.word.toLowerCase()) {
+        locked = true;
+        score++;
+        feedback.textContent = answerShown
+          ? `很好！看過答案後，你已經能再拼出 ${item.word}。`
+          : `太棒了！你成功拼出 ${item.word}。`;
+        feedback.className = "feedback ok";
+        updateTop();
+
+        setTimeout(() => {
+          spellPointer++;
+          spellingTries = 0;
+          answerShown = false;
+          if (spellPointer >= spellOrder.length) finishGroup();
+          else showSpellQuiz();
+        }, 1000);
+        return;
+      }
+
+      spellingTries++;
+
+      if (spellingTries >= 3 && !answerShown) {
+        answerShown = true;
+        feedback.textContent = `先不要卡住。請看答案「${item.word}」，唸一次，再重新輸入。`;
+        feedback.className = "feedback info";
+        setTimeout(showSpellQuiz, 1200);
+      } else if (answerShown) {
+        feedback.textContent = `請照著答案再輸入一次：${item.word}`;
+        feedback.className = "feedback info";
+        input.select();
+      } else {
+        const left = 3 - spellingTries;
+        feedback.textContent = `還不完全正確。再試一次，還有 ${left} 次機會後會顯示答案。`;
+        feedback.className = "feedback no";
+        input.select();
+      }
+    }
+
+    function finishGroup() {
+      const groupEnd = currentGroupEnd();
+
+      if (groupEnd < wordBank.length) {
+        content.innerHTML = `
+          <div class="finish">
+            <div class="confetti">✅</div>
+            <h2>這一組完成了！</h2>
+            <p>你已經完成第 ${Math.floor(groupStart / groupSize) + 1} 組的選意思、總複習和拼字測驗。</p>
+            <p>接著挑戰下一組 5 個單字。</p>
+            <div class="btns" style="justify-content:center;">
+              <button class="success" onclick="goNextGroup()">開始下一組</button>
+            </div>
+          </div>
+        `;
+        clearFeedback();
+        updateTop();
+      } else {
+        showFinish();
+      }
+    }
+
+    function goNextGroup() {
+      groupStart = currentGroupEnd();
+      learnPointer = groupStart;
+      quizOrder = [];
+      quizPointer = 0;
+      spellOrder = [];
+      spellPointer = 0;
+      spellingTries = 0;
+      answerShown = false;
+      showGroupLearn();
+    }
+
+    function showFinish() {
+      mode = "finish";
+      clearFeedback();
+      progressBar.style.width = "100%";
+      wordIndex.textContent = "10 / 10";
+      stageName.textContent = "完成";
+      content.innerHTML = `
+        <div class="finish">
+          <div class="confetti">🎉🏆✨</div>
+          <h2>你很棒！</h2>
+          <p>今天多記了 10 個單字。</p>
+          <p>你已經完成今天的英文單字任務，現在獎賞你一個刺激的跑酷小遊戲！</p>
+          <div class="word-list">
+            ${wordBank.map(w => `<div class="word-pill">
+              ${w.word} ${w.ipa}<br>
+              ${w.pos}｜${w.zh}<br>
+              <span style="color:#64748b;">${w.sentence}（${w.sentenceZh}）</span>
+            </div>`).join("")}
+          </div>
+          <div class="btns" style="justify-content:center;">
+            <button class="success" onclick="unlockGame()">開始跑酷小遊戲</button>
+            <button class="secondary" onclick="restartLearning()">重新練習</button>
+          </div>
+        </div>
+      `;
+    }
+
+    function restartLearning() {
+      mode = "groupLearn";
+      groupStart = 0;
+      learnPointer = 0;
+      quizOrder = [];
+      quizPointer = 0;
+      spellOrder = [];
+      spellPointer = 0;
+      score = 0;
+      spellingTries = 0;
+      answerShown = false;
+      document.getElementById("gameSection").style.display = "none";
+      showGroupLearn();
+    }
+
+    function unlockGame() {
+      document.getElementById("gameSection").style.display = "block";
+      document.getElementById("gameSection").scrollIntoView({ behavior: "smooth" });
+      startGame();
+    }
+
+    // Parkour mini game
+    const canvas = document.getElementById("gameCanvas");
+    const ctx = canvas.getContext("2d");
+    const gameScoreEl = document.getElementById("gameScore");
+    const restartGameBtn = document.getElementById("restartGameBtn");
+
+    let player, obstacles, stars, gameSpeed, gameScore, gameOver, animationId, frame;
+
+    function resetGame() {
+      player = {
+        x: 90,
+        y: 290,
+        w: 46,
+        h: 58,
+        vy: 0,
+        gravity: 0.9,
+        jump: -16,
+        grounded: true
+      };
+      obstacles = [];
+      stars = [];
+      gameSpeed = 6;
+      gameScore = 0;
+      gameOver = false;
+      frame = 0;
+      gameScoreEl.textContent = gameScore;
+    }
+
+    function startGame() {
+      cancelAnimationFrame(animationId);
+      resetGame();
+      loop();
+    }
+
+    function jump() {
+      if (player && player.grounded && !gameOver) {
+        player.vy = player.jump;
+        player.grounded = false;
+      } else if (gameOver) {
+        startGame();
+      }
+    }
+
+    function spawnObstacle() {
+      const h = 36 + Math.random() * 42;
+      obstacles.push({
+        x: canvas.width + 10,
+        y: 348 - h,
+        w: 28 + Math.random() * 22,
+        h
+      });
+    }
+
+    function spawnStar() {
+      stars.push({
+        x: canvas.width + 10,
+        y: 190 + Math.random() * 80,
+        r: 13,
+        collected: false
+      });
+    }
+
+    function rectHit(a, b) {
+      return a.x < b.x + b.w && a.x + a.w > b.x && a.y < b.y + b.h && a.y + a.h > b.y;
+    }
+
+    function circleRectHit(c, r) {
+      const closestX = Math.max(r.x, Math.min(c.x, r.x + r.w));
+      const closestY = Math.max(r.y, Math.min(c.y, r.y + r.h));
+      const dx = c.x - closestX;
+      const dy = c.y - closestY;
+      return dx * dx + dy * dy < c.r * c.r;
+    }
+
+    function drawStar(x, y, r) {
+      ctx.save();
+      ctx.translate(x, y);
+      ctx.beginPath();
+      for (let i = 0; i < 10; i++) {
+        const radius = i % 2 === 0 ? r : r / 2;
+        const angle = Math.PI / 5 * i - Math.PI / 2;
+        ctx.lineTo(Math.cos(angle) * radius, Math.sin(angle) * radius);
+      }
+      ctx.closePath();
+      ctx.fillStyle = "#fde047";
+      ctx.fill();
+      ctx.restore();
+    }
+
+    function loop() {
+      frame++;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      ctx.fillStyle = "#0f172a";
+      ctx.fillRect(0, 348, canvas.width, 72);
+      ctx.fillStyle = "#334155";
+      for (let i = 0; i < canvas.width; i += 50) {
+        ctx.fillRect((i - (frame * gameSpeed) % 50), 382, 25, 4);
+      }
+
+      player.vy += player.gravity;
+      player.y += player.vy;
+      if (player.y + player.h >= 348) {
+        player.y = 348 - player.h;
+        player.vy = 0;
+        player.grounded = true;
+      }
+
+      if (frame % 78 === 0) spawnObstacle();
+      if (frame % 125 === 0) spawnStar();
+      if (frame % 420 === 0) gameSpeed += 0.7;
+
+      obstacles.forEach(o => {
+        o.x -= gameSpeed;
+        ctx.fillStyle = "#ef4444";
+        ctx.fillRect(o.x, o.y, o.w, o.h);
+        ctx.fillStyle = "#fecaca";
+        ctx.fillRect(o.x + 6, o.y + 6, o.w - 12, 8);
+        if (rectHit(player, o)) gameOver = true;
+      });
+      obstacles = obstacles.filter(o => o.x + o.w > -10);
+
+      stars.forEach(s => {
+        s.x -= gameSpeed;
+        if (!s.collected) drawStar(s.x, s.y, s.r);
+        if (!s.collected && circleRectHit(s, player)) {
+          s.collected = true;
+          gameScore += 10;
+          gameScoreEl.textContent = gameScore;
+        }
+      });
+      stars = stars.filter(s => s.x + s.r > -10 && !s.collected);
+
+      ctx.fillStyle = "#22c55e";
+      ctx.fillRect(player.x, player.y, player.w, player.h);
+      ctx.fillStyle = "#dcfce7";
+      ctx.fillRect(player.x + 10, player.y + 10, 10, 10);
+      ctx.fillRect(player.x + 28, player.y + 10, 10, 10);
+
+      if (!gameOver && frame % 8 === 0) {
+        gameScore++;
+        gameScoreEl.textContent = gameScore;
+      }
+
+      if (gameOver) {
+        ctx.fillStyle = "rgba(15, 23, 42, 0.76)";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = "white";
+        ctx.font = "bold 44px system-ui";
+        ctx.textAlign = "center";
+        ctx.fillText("Game Over", canvas.width / 2, 180);
+        ctx.font = "bold 24px system-ui";
+        ctx.fillText("按空白鍵、↑ 或點一下畫面重新開始", canvas.width / 2, 225);
+        return;
+      }
+
+      animationId = requestAnimationFrame(loop);
+    }
+
+    document.addEventListener("keydown", (e) => {
+      if (e.code === "Space" || e.code === "ArrowUp") {
+        e.preventDefault();
+        jump();
+      }
+    });
+
+    canvas.addEventListener("click", jump);
+    canvas.addEventListener("touchstart", (e) => {
+      e.preventDefault();
+      jump();
+    }, { passive: false });
+    restartGameBtn.addEventListener("click", startGame);
+
+    showGroupLearn();
+  </script>
+</body>
+</html>

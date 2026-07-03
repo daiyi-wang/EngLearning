@@ -1,0 +1,423 @@
+const week1WordBank = {
+  day1: [
+    {
+      word: "January",
+      ipa: "/ˈdʒænjuˌeri/",
+      pos: "名詞 n.",
+      zh: "一月",
+      sentence: "January is cold.",
+      sentenceZh: "一月很冷。"
+    },
+    {
+      word: "February",
+      ipa: "/ˈfebruˌeri/",
+      pos: "名詞 n.",
+      zh: "二月",
+      sentence: "February is short.",
+      sentenceZh: "二月很短。"
+    },
+    {
+      word: "March",
+      ipa: "/mɑːrtʃ/",
+      pos: "名詞 n.",
+      zh: "三月",
+      sentence: "March is warm.",
+      sentenceZh: "三月很溫暖。"
+    },
+    {
+      word: "April",
+      ipa: "/ˈeɪprəl/",
+      pos: "名詞 n.",
+      zh: "四月",
+      sentence: "April has rain.",
+      sentenceZh: "四月會下雨。"
+    },
+    {
+      word: "May",
+      ipa: "/meɪ/",
+      pos: "名詞 n.",
+      zh: "五月",
+      sentence: "May is nice.",
+      sentenceZh: "五月很好。"
+    },
+    {
+      word: "June",
+      ipa: "/dʒuːn/",
+      pos: "名詞 n.",
+      zh: "六月",
+      sentence: "June is hot.",
+      sentenceZh: "六月很熱。"
+    },
+    {
+      word: "July",
+      ipa: "/dʒuˈlaɪ/",
+      pos: "名詞 n.",
+      zh: "七月",
+      sentence: "July is summer.",
+      sentenceZh: "七月是夏天。"
+    },
+    {
+      word: "August",
+      ipa: "/ˈɔːɡəst/",
+      pos: "名詞 n.",
+      zh: "八月",
+      sentence: "August is sunny.",
+      sentenceZh: "八月陽光充足。"
+    },
+    {
+      word: "September",
+      ipa: "/sepˈtembər/",
+      pos: "名詞 n.",
+      zh: "九月",
+      sentence: "School starts in September.",
+      sentenceZh: "學校在九月開學。"
+    },
+    {
+      word: "October",
+      ipa: "/ɑːkˈtoʊbər/",
+      pos: "名詞 n.",
+      zh: "十月",
+      sentence: "October is cool.",
+      sentenceZh: "十月很涼爽。"
+    }
+  ],
+
+  day2: [
+    {
+      word: "November",
+      ipa: "/noʊˈvembər/",
+      pos: "名詞 n.",
+      zh: "十一月",
+      sentence: "November is cool.",
+      sentenceZh: "十一月很涼爽。"
+    },
+    {
+      word: "December",
+      ipa: "/dɪˈsembər/",
+      pos: "名詞 n.",
+      zh: "十二月",
+      sentence: "December is cold.",
+      sentenceZh: "十二月很冷。"
+    },
+    {
+      word: "date",
+      ipa: "/deɪt/",
+      pos: "名詞 n.／動詞 v.",
+      zh: "日期；約會",
+      sentence: "What is the date?",
+      sentenceZh: "今天是幾號？",
+      forms: { ing: "dating", past: "dated", pp: "dated" }
+    },
+    {
+      word: "when",
+      ipa: "/wen/",
+      pos: "副詞 adv.",
+      zh: "何時",
+      sentence: "When is your birthday?",
+      sentenceZh: "你的生日是什麼時候？"
+    },
+    {
+      word: "Easter",
+      ipa: "/ˈiːstər/",
+      pos: "名詞 n.",
+      zh: "復活節",
+      sentence: "Easter is in spring.",
+      sentenceZh: "復活節在春天。"
+    },
+    {
+      word: "Halloween",
+      ipa: "/ˌhæləˈwiːn/",
+      pos: "名詞 n.",
+      zh: "萬聖節前夕",
+      sentence: "Halloween is fun.",
+      sentenceZh: "萬聖節很好玩。"
+    },
+    {
+      word: "Thanksgiving",
+      ipa: "/ˌθæŋksˈɡɪvɪŋ/",
+      pos: "名詞 n.",
+      zh: "感恩節",
+      sentence: "Thanksgiving is a holiday.",
+      sentenceZh: "感恩節是一個節日。"
+    },
+    {
+      word: "Christmas",
+      ipa: "/ˈkrɪsməs/",
+      pos: "名詞 n.",
+      zh: "聖誕節",
+      sentence: "Christmas is in December.",
+      sentenceZh: "聖誕節在十二月。"
+    },
+    {
+      word: "holiday",
+      ipa: "/ˈhɑːlədeɪ/",
+      pos: "名詞 n.",
+      zh: "節日；假期",
+      sentence: "I like this holiday.",
+      sentenceZh: "我喜歡這個假期。"
+    },
+    {
+      word: "race",
+      ipa: "/reɪs/",
+      pos: "名詞 n.／動詞 v.",
+      zh: "賽跑；競賽",
+      sentence: "He won the race.",
+      sentenceZh: "他贏了比賽。",
+      forms: { ing: "racing", past: "raced", pp: "raced" }
+    }
+  ],
+
+  day3: [
+    {
+      word: "whose",
+      ipa: "/huːz/",
+      pos: "代名詞 pron.",
+      zh: "誰的",
+      sentence: "Whose bag is this?",
+      sentenceZh: "這是誰的包包？"
+    },
+    {
+      word: "first",
+      ipa: "/fɜːrst/",
+      pos: "形容詞 adj.／副詞 adv.",
+      zh: "第一的；首先",
+      sentence: "I am first.",
+      sentenceZh: "我是第一名。"
+    },
+    {
+      word: "second",
+      ipa: "/ˈsekənd/",
+      pos: "形容詞 adj.／名詞 n.",
+      zh: "第二的；秒",
+      sentence: "She is second.",
+      sentenceZh: "她是第二名。"
+    },
+    {
+      word: "third",
+      ipa: "/θɜːrd/",
+      pos: "形容詞 adj.／名詞 n.",
+      zh: "第三的",
+      sentence: "He is third.",
+      sentenceZh: "他是第三名。"
+    },
+    {
+      word: "away",
+      ipa: "/əˈweɪ/",
+      pos: "副詞 adv.",
+      zh: "離開；離……之遠",
+      sentence: "The school is far away.",
+      sentenceZh: "學校很遠。"
+    },
+    {
+      word: "runner",
+      ipa: "/ˈrʌnər/",
+      pos: "名詞 n.",
+      zh: "跑者",
+      sentence: "He is a good runner.",
+      sentenceZh: "他是一位好跑者。"
+    },
+    {
+      word: "over there",
+      ipa: "/ˌoʊvər ˈðer/",
+      pos: "片語 phr.",
+      zh: "在那邊",
+      sentence: "My bag is over there.",
+      sentenceZh: "我的包包在那邊。"
+    },
+    {
+      word: "take care of",
+      ipa: "/teɪk ker əv/",
+      pos: "動詞片語 v. phr.",
+      zh: "照顧",
+      sentence: "I take care of my dog.",
+      sentenceZh: "我照顧我的狗。",
+      forms: { ing: "taking care of", past: "took care of", pp: "taken care of" }
+    },
+    {
+      word: "play the role of",
+      ipa: "/pleɪ ðə roʊl əv/",
+      pos: "動詞片語 v. phr.",
+      zh: "扮演……的角色",
+      sentence: "She plays the role of a queen.",
+      sentenceZh: "她扮演女王的角色。",
+      forms: { ing: "playing the role of", past: "played the role of", pp: "played the role of" }
+    },
+    {
+      word: "letter",
+      ipa: "/ˈletər/",
+      pos: "名詞 n.",
+      zh: "信件；字母",
+      sentence: "I write a letter.",
+      sentenceZh: "我寫一封信。"
+    }
+  ],
+
+  day4: [
+    {
+      word: "dear",
+      ipa: "/dɪr/",
+      pos: "形容詞 adj.",
+      zh: "親愛的",
+      sentence: "Dear Mom, I miss you.",
+      sentenceZh: "親愛的媽媽，我想念你。"
+    },
+    {
+      word: "busy",
+      ipa: "/ˈbɪzi/",
+      pos: "形容詞 adj.",
+      zh: "忙碌的",
+      sentence: "I am busy today.",
+      sentenceZh: "我今天很忙。"
+    },
+    {
+      word: "miss",
+      ipa: "/mɪs/",
+      pos: "動詞 v.",
+      zh: "想念；錯過",
+      sentence: "I miss my family.",
+      sentenceZh: "我想念我的家人。",
+      forms: { ing: "missing", past: "missed", pp: "missed" }
+    },
+    {
+      word: "everything",
+      ipa: "/ˈevriˌθɪŋ/",
+      pos: "代名詞 pron.",
+      zh: "一切事物",
+      sentence: "Everything is fine.",
+      sentenceZh: "一切都很好。"
+    },
+    {
+      word: "love",
+      ipa: "/lʌv/",
+      pos: "名詞 n.／動詞 v.",
+      zh: "愛",
+      sentence: "I love my family.",
+      sentenceZh: "我愛我的家人。",
+      forms: { ing: "loving", past: "loved", pp: "loved" }
+    },
+    {
+      word: "food",
+      ipa: "/fuːd/",
+      pos: "名詞 n.",
+      zh: "食物",
+      sentence: "I like this food.",
+      sentenceZh: "我喜歡這個食物。"
+    },
+    {
+      word: "bottle",
+      ipa: "/ˈbɑːtəl/",
+      pos: "名詞 n.",
+      zh: "瓶子",
+      sentence: "This is a bottle.",
+      sentenceZh: "這是一個瓶子。"
+    },
+    {
+      word: "water",
+      ipa: "/ˈwɔːtər/",
+      pos: "名詞 n.／動詞 v.",
+      zh: "水；澆水",
+      sentence: "I drink water.",
+      sentenceZh: "我喝水。",
+      forms: { ing: "watering", past: "watered", pp: "watered" }
+    },
+    {
+      word: "bowl",
+      ipa: "/boʊl/",
+      pos: "名詞 n.",
+      zh: "碗",
+      sentence: "I need a bowl.",
+      sentenceZh: "我需要一個碗。"
+    },
+    {
+      word: "rice",
+      ipa: "/raɪs/",
+      pos: "名詞 n.",
+      zh: "米；飯",
+      sentence: "I eat rice.",
+      sentenceZh: "我吃飯。"
+    }
+  ],
+
+  day5: [
+    {
+      word: "plate",
+      ipa: "/pleɪt/",
+      pos: "名詞 n.",
+      zh: "盤子",
+      sentence: "The plate is white.",
+      sentenceZh: "這個盤子是白色的。"
+    },
+    {
+      word: "noodle",
+      ipa: "/ˈnuːdəl/",
+      pos: "名詞 n.",
+      zh: "麵條",
+      sentence: "I like noodles.",
+      sentenceZh: "我喜歡麵條。"
+    },
+    {
+      word: "pie",
+      ipa: "/paɪ/",
+      pos: "名詞 n.",
+      zh: "派",
+      sentence: "This pie is yummy.",
+      sentenceZh: "這個派很好吃。"
+    },
+    {
+      word: "piece",
+      ipa: "/piːs/",
+      pos: "名詞 n.",
+      zh: "塊；片；張",
+      sentence: "I want a piece of pie.",
+      sentenceZh: "我想要一塊派。"
+    },
+    {
+      word: "glass",
+      ipa: "/ɡlæs/",
+      pos: "名詞 n.",
+      zh: "玻璃杯；玻璃",
+      sentence: "I need a glass.",
+      sentenceZh: "我需要一個玻璃杯。"
+    },
+    {
+      word: "gram",
+      ipa: "/ɡræm/",
+      pos: "名詞 n.",
+      zh: "公克",
+      sentence: "I need ten grams.",
+      sentenceZh: "我需要十公克。"
+    },
+    {
+      word: "kilogram",
+      ipa: "/ˈkɪləɡræm/",
+      pos: "名詞 n.",
+      zh: "公斤",
+      sentence: "It is one kilogram.",
+      sentenceZh: "它是一公斤。"
+    },
+    {
+      word: "salt",
+      ipa: "/sɔːlt/",
+      pos: "名詞 n.",
+      zh: "鹽",
+      sentence: "Add some salt.",
+      sentenceZh: "加一些鹽。"
+    },
+    {
+      word: "sugar",
+      ipa: "/ˈʃʊɡər/",
+      pos: "名詞 n.",
+      zh: "糖",
+      sentence: "I need sugar.",
+      sentenceZh: "我需要糖。"
+    },
+    {
+      word: "a few",
+      ipa: "/ə fjuː/",
+      pos: "片語 phr.",
+      zh: "幾個；一些",
+      sentence: "I have a few books.",
+      sentenceZh: "我有幾本書。"
+    }
+  ]
+};
