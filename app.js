@@ -416,14 +416,19 @@ function renderGroupSummary() {
   const isLastGroup = session.groupStart + GROUP_SIZE >= selectedWords.length;
   app.innerHTML = `${renderTop()}<div class="lesson">
     <span class="group-chip">${session.roundKind === "focus" ? "錯題加強完成" : "一輪完成"}</span>
-    <h3 class="meaning">${remaining.length ? `還有 ${remaining.length} 個字需要再加強` : "這一輪的單字都穩住了"}</h3>
+    <h3 class="meaning">${remaining.length ? `還有 ${remaining.length} 個錯題，必須全部練對` : "這一輪的單字全部答對了"}</h3>
+    ${remaining.length ? `<p class="data-note">完成下面錯題的中文辨識與拼字後，系統會再次檢查；錯題歸零才能進入下一組。</p>` : ""}
     ${remaining.length ? `<div class="review-grid">${remaining.map(id => { const word = wordsById.get(id); return `<div class="mini-card mistake"><b>${escapeHtml(word.word)}</b><span>${escapeHtml(word.zh)}</span></div>`; }).join("")}</div>` : ""}
     <div class="actions">
-      ${remaining.length ? `<button id="focusMistakes" class="button warning" type="button">立即再練錯題</button>` : ""}
-      <button id="continueGroup" class="button success" type="button">${isLastGroup ? "看今天的成果" : "進入下一組 5 個字"}</button>
+      ${remaining.length
+        ? `<button id="focusMistakes" class="button warning" type="button">再練錯題，直到全對</button>`
+        : `<button id="continueGroup" class="button success" type="button">${isLastGroup ? "完成今天的 10 個字" : "進入下一組 5 個字"}</button>`}
     </div>
   </div>`;
-  if (remaining.length) document.getElementById("focusMistakes").onclick = () => startFocusRound(remaining);
+  if (remaining.length) {
+    document.getElementById("focusMistakes").onclick = () => startFocusRound(remaining);
+    return;
+  }
   document.getElementById("continueGroup").onclick = () => {
     if (isLastGroup) {
       session.phase = "finish";
