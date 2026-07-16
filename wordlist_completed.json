@@ -1,0 +1,2444 @@
+{
+  "schemaVersion": 1,
+  "settings": {
+    "timezone": "Asia/Taipei",
+    "dailyCount": 10,
+    "firstLearningDate": "2026-07-14",
+    "firstWordNumber": 61,
+    "weekdays": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "words": [
+    {
+      "id": "word-0001",
+      "word": "January",
+      "zh": "一月",
+      "ipa": "/ˈdʒænjuˌeri/",
+      "pos": "名詞 n.",
+      "sentence": "January is cold.",
+      "sentenceZh": "一月很冷。"
+    },
+    {
+      "id": "word-0002",
+      "word": "February",
+      "zh": "二月",
+      "ipa": "/ˈfebruˌeri/",
+      "pos": "名詞 n.",
+      "sentence": "February is short.",
+      "sentenceZh": "二月很短。"
+    },
+    {
+      "id": "word-0003",
+      "word": "March",
+      "zh": "三月",
+      "ipa": "/mɑːrtʃ/",
+      "pos": "名詞 n.",
+      "sentence": "March is warm.",
+      "sentenceZh": "三月很溫暖。"
+    },
+    {
+      "id": "word-0004",
+      "word": "April",
+      "zh": "四月",
+      "ipa": "/ˈeɪprəl/",
+      "pos": "名詞 n.",
+      "sentence": "April has rain.",
+      "sentenceZh": "四月會下雨。"
+    },
+    {
+      "id": "word-0005",
+      "word": "May",
+      "zh": "五月",
+      "ipa": "/meɪ/",
+      "pos": "名詞 n.",
+      "sentence": "May is nice.",
+      "sentenceZh": "五月很好。"
+    },
+    {
+      "id": "word-0006",
+      "word": "June",
+      "zh": "六月",
+      "ipa": "/dʒuːn/",
+      "pos": "名詞 n.",
+      "sentence": "June is hot.",
+      "sentenceZh": "六月很熱。"
+    },
+    {
+      "id": "word-0007",
+      "word": "July",
+      "zh": "七月",
+      "ipa": "/dʒuˈlaɪ/",
+      "pos": "名詞 n.",
+      "sentence": "July is summer.",
+      "sentenceZh": "七月是夏天。"
+    },
+    {
+      "id": "word-0008",
+      "word": "August",
+      "zh": "八月",
+      "ipa": "/ˈɔːɡəst/",
+      "pos": "名詞 n.",
+      "sentence": "August is sunny.",
+      "sentenceZh": "八月陽光充足。"
+    },
+    {
+      "id": "word-0009",
+      "word": "September",
+      "zh": "九月",
+      "ipa": "/sepˈtembər/",
+      "pos": "名詞 n.",
+      "sentence": "School starts in September.",
+      "sentenceZh": "學校在九月開學。"
+    },
+    {
+      "id": "word-0010",
+      "word": "October",
+      "zh": "十月",
+      "ipa": "/ɑːkˈtoʊbər/",
+      "pos": "名詞 n.",
+      "sentence": "October is cool.",
+      "sentenceZh": "十月很涼爽。"
+    },
+    {
+      "id": "word-0011",
+      "word": "November",
+      "zh": "十一月",
+      "ipa": "/noʊˈvembər/",
+      "pos": "名詞 n.",
+      "sentence": "November is cool.",
+      "sentenceZh": "十一月很涼爽。"
+    },
+    {
+      "id": "word-0012",
+      "word": "December",
+      "zh": "十二月",
+      "ipa": "/dɪˈsembər/",
+      "pos": "名詞 n.",
+      "sentence": "December is cold.",
+      "sentenceZh": "十二月很冷。"
+    },
+    {
+      "id": "word-0013",
+      "word": "date",
+      "zh": "日期；約會",
+      "ipa": "/deɪt/",
+      "pos": "名詞 n.／動詞 v.",
+      "sentence": "What is the date?",
+      "sentenceZh": "今天是幾號？",
+      "forms": {
+        "ing": "dating",
+        "past": "dated",
+        "pp": "dated"
+      }
+    },
+    {
+      "id": "word-0014",
+      "word": "when",
+      "zh": "何時",
+      "ipa": "/wen/",
+      "pos": "副詞 adv.",
+      "sentence": "When is your birthday?",
+      "sentenceZh": "你的生日是什麼時候？"
+    },
+    {
+      "id": "word-0015",
+      "word": "Easter",
+      "zh": "復活節",
+      "ipa": "/ˈiːstər/",
+      "pos": "名詞 n.",
+      "sentence": "Easter is in spring.",
+      "sentenceZh": "復活節在春天。"
+    },
+    {
+      "id": "word-0016",
+      "word": "Halloween",
+      "zh": "萬聖節前夕",
+      "ipa": "/ˌhæləˈwiːn/",
+      "pos": "名詞 n.",
+      "sentence": "Halloween is fun.",
+      "sentenceZh": "萬聖節很好玩。"
+    },
+    {
+      "id": "word-0017",
+      "word": "Thanksgiving",
+      "zh": "感恩節",
+      "ipa": "/ˌθæŋksˈɡɪvɪŋ/",
+      "pos": "名詞 n.",
+      "sentence": "Thanksgiving is a holiday.",
+      "sentenceZh": "感恩節是一個節日。"
+    },
+    {
+      "id": "word-0018",
+      "word": "Christmas",
+      "zh": "聖誕節",
+      "ipa": "/ˈkrɪsməs/",
+      "pos": "名詞 n.",
+      "sentence": "Christmas is in December.",
+      "sentenceZh": "聖誕節在十二月。"
+    },
+    {
+      "id": "word-0019",
+      "word": "holiday",
+      "zh": "節日；假期",
+      "ipa": "/ˈhɑːlədeɪ/",
+      "pos": "名詞 n.",
+      "sentence": "I like this holiday.",
+      "sentenceZh": "我喜歡這個假期。"
+    },
+    {
+      "id": "word-0020",
+      "word": "race",
+      "zh": "賽跑；競賽",
+      "ipa": "/reɪs/",
+      "pos": "名詞 n.／動詞 v.",
+      "sentence": "He won the race.",
+      "sentenceZh": "他贏了比賽。",
+      "forms": {
+        "ing": "racing",
+        "past": "raced",
+        "pp": "raced"
+      }
+    },
+    {
+      "id": "word-0021",
+      "word": "whose",
+      "zh": "誰的",
+      "ipa": "/huːz/",
+      "pos": "代名詞 pron.",
+      "sentence": "Whose bag is this?",
+      "sentenceZh": "這是誰的包包？"
+    },
+    {
+      "id": "word-0022",
+      "word": "first",
+      "zh": "第一的；首先",
+      "ipa": "/fɜːrst/",
+      "pos": "形容詞 adj.／副詞 adv.",
+      "sentence": "I am first.",
+      "sentenceZh": "我是第一名。"
+    },
+    {
+      "id": "word-0023",
+      "word": "second",
+      "zh": "第二的；秒",
+      "ipa": "/ˈsekənd/",
+      "pos": "形容詞 adj.／名詞 n.",
+      "sentence": "She is second.",
+      "sentenceZh": "她是第二名。"
+    },
+    {
+      "id": "word-0024",
+      "word": "third",
+      "zh": "第三的",
+      "ipa": "/θɜːrd/",
+      "pos": "形容詞 adj.／名詞 n.",
+      "sentence": "He is third.",
+      "sentenceZh": "他是第三名。"
+    },
+    {
+      "id": "word-0025",
+      "word": "away",
+      "zh": "離開；離……之遠",
+      "ipa": "/əˈweɪ/",
+      "pos": "副詞 adv.",
+      "sentence": "The school is far away.",
+      "sentenceZh": "學校很遠。"
+    },
+    {
+      "id": "word-0026",
+      "word": "runner",
+      "zh": "跑者",
+      "ipa": "/ˈrʌnər/",
+      "pos": "名詞 n.",
+      "sentence": "He is a good runner.",
+      "sentenceZh": "他是一位好跑者。"
+    },
+    {
+      "id": "word-0027",
+      "word": "over there",
+      "zh": "在那邊",
+      "ipa": "/ˌoʊvər ˈðer/",
+      "pos": "片語 phr.",
+      "sentence": "My bag is over there.",
+      "sentenceZh": "我的包包在那邊。"
+    },
+    {
+      "id": "word-0028",
+      "word": "take care of",
+      "zh": "照顧",
+      "ipa": "/teɪk ker əv/",
+      "pos": "動詞片語 v. phr.",
+      "sentence": "I take care of my dog.",
+      "sentenceZh": "我照顧我的狗。",
+      "forms": {
+        "ing": "taking care of",
+        "past": "took care of",
+        "pp": "taken care of"
+      }
+    },
+    {
+      "id": "word-0029",
+      "word": "play the role of",
+      "zh": "扮演……的角色",
+      "ipa": "/pleɪ ðə roʊl əv/",
+      "pos": "動詞片語 v. phr.",
+      "sentence": "She plays the role of a queen.",
+      "sentenceZh": "她扮演女王的角色。",
+      "forms": {
+        "ing": "playing the role of",
+        "past": "played the role of",
+        "pp": "played the role of"
+      }
+    },
+    {
+      "id": "word-0030",
+      "word": "letter",
+      "zh": "信件；字母",
+      "ipa": "/ˈletər/",
+      "pos": "名詞 n.",
+      "sentence": "I write a letter.",
+      "sentenceZh": "我寫一封信。"
+    },
+    {
+      "id": "word-0031",
+      "word": "dear",
+      "zh": "親愛的",
+      "ipa": "/dɪr/",
+      "pos": "形容詞 adj.",
+      "sentence": "Dear Mom, I miss you.",
+      "sentenceZh": "親愛的媽媽，我想念你。"
+    },
+    {
+      "id": "word-0032",
+      "word": "busy",
+      "zh": "忙碌的",
+      "ipa": "/ˈbɪzi/",
+      "pos": "形容詞 adj.",
+      "sentence": "I am busy today.",
+      "sentenceZh": "我今天很忙。"
+    },
+    {
+      "id": "word-0033",
+      "word": "miss",
+      "zh": "想念；錯過",
+      "ipa": "/mɪs/",
+      "pos": "動詞 v.",
+      "sentence": "I miss my family.",
+      "sentenceZh": "我想念我的家人。",
+      "forms": {
+        "ing": "missing",
+        "past": "missed",
+        "pp": "missed"
+      }
+    },
+    {
+      "id": "word-0034",
+      "word": "everything",
+      "zh": "一切事物",
+      "ipa": "/ˈevriˌθɪŋ/",
+      "pos": "代名詞 pron.",
+      "sentence": "Everything is fine.",
+      "sentenceZh": "一切都很好。"
+    },
+    {
+      "id": "word-0035",
+      "word": "love",
+      "zh": "愛",
+      "ipa": "/lʌv/",
+      "pos": "名詞 n.／動詞 v.",
+      "sentence": "I love my family.",
+      "sentenceZh": "我愛我的家人。",
+      "forms": {
+        "ing": "loving",
+        "past": "loved",
+        "pp": "loved"
+      }
+    },
+    {
+      "id": "word-0036",
+      "word": "food",
+      "zh": "食物",
+      "ipa": "/fuːd/",
+      "pos": "名詞 n.",
+      "sentence": "I like this food.",
+      "sentenceZh": "我喜歡這個食物。"
+    },
+    {
+      "id": "word-0037",
+      "word": "bottle",
+      "zh": "瓶子",
+      "ipa": "/ˈbɑːtəl/",
+      "pos": "名詞 n.",
+      "sentence": "This is a bottle.",
+      "sentenceZh": "這是一個瓶子。"
+    },
+    {
+      "id": "word-0038",
+      "word": "water",
+      "zh": "水；澆水",
+      "ipa": "/ˈwɔːtər/",
+      "pos": "名詞 n.／動詞 v.",
+      "sentence": "I drink water.",
+      "sentenceZh": "我喝水。",
+      "forms": {
+        "ing": "watering",
+        "past": "watered",
+        "pp": "watered"
+      }
+    },
+    {
+      "id": "word-0039",
+      "word": "bowl",
+      "zh": "碗",
+      "ipa": "/boʊl/",
+      "pos": "名詞 n.",
+      "sentence": "I need a bowl.",
+      "sentenceZh": "我需要一個碗。"
+    },
+    {
+      "id": "word-0040",
+      "word": "rice",
+      "zh": "米；飯",
+      "ipa": "/raɪs/",
+      "pos": "名詞 n.",
+      "sentence": "I eat rice.",
+      "sentenceZh": "我吃飯。"
+    },
+    {
+      "id": "word-0041",
+      "word": "plate",
+      "zh": "盤子",
+      "ipa": "/pleɪt/",
+      "pos": "名詞 n.",
+      "sentence": "The plate is white.",
+      "sentenceZh": "這個盤子是白色的。"
+    },
+    {
+      "id": "word-0042",
+      "word": "noodle",
+      "zh": "麵條",
+      "ipa": "/ˈnuːdəl/",
+      "pos": "名詞 n.",
+      "sentence": "I like noodles.",
+      "sentenceZh": "我喜歡麵條。"
+    },
+    {
+      "id": "word-0043",
+      "word": "pie",
+      "zh": "派",
+      "ipa": "/paɪ/",
+      "pos": "名詞 n.",
+      "sentence": "This pie is yummy.",
+      "sentenceZh": "這個派很好吃。"
+    },
+    {
+      "id": "word-0044",
+      "word": "piece",
+      "zh": "塊；片；張",
+      "ipa": "/piːs/",
+      "pos": "名詞 n.",
+      "sentence": "I want a piece of pie.",
+      "sentenceZh": "我想要一塊派。"
+    },
+    {
+      "id": "word-0045",
+      "word": "glass",
+      "zh": "玻璃杯；玻璃",
+      "ipa": "/ɡlæs/",
+      "pos": "名詞 n.",
+      "sentence": "I need a glass.",
+      "sentenceZh": "我需要一個玻璃杯。"
+    },
+    {
+      "id": "word-0046",
+      "word": "gram",
+      "zh": "公克",
+      "ipa": "/ɡræm/",
+      "pos": "名詞 n.",
+      "sentence": "I need ten grams.",
+      "sentenceZh": "我需要十公克。"
+    },
+    {
+      "id": "word-0047",
+      "word": "kilogram",
+      "zh": "公斤",
+      "ipa": "/ˈkɪləɡræm/",
+      "pos": "名詞 n.",
+      "sentence": "It is one kilogram.",
+      "sentenceZh": "它是一公斤。"
+    },
+    {
+      "id": "word-0048",
+      "word": "salt",
+      "zh": "鹽",
+      "ipa": "/sɔːlt/",
+      "pos": "名詞 n.",
+      "sentence": "Add some salt.",
+      "sentenceZh": "加一些鹽。"
+    },
+    {
+      "id": "word-0049",
+      "word": "sugar",
+      "zh": "糖",
+      "ipa": "/ˈʃʊɡər/",
+      "pos": "名詞 n.",
+      "sentence": "I need sugar.",
+      "sentenceZh": "我需要糖。"
+    },
+    {
+      "id": "word-0050",
+      "word": "a few",
+      "zh": "幾個；一些",
+      "ipa": "/ə fjuː/",
+      "pos": "片語 phr.",
+      "sentence": "I have a few books.",
+      "sentenceZh": "我有幾本書。"
+    },
+    {
+      "id": "word-0051",
+      "word": "a little",
+      "zh": "少量的；一點",
+      "ipa": "/ə ˈlɪtəl/",
+      "pos": "片語 phr.",
+      "sentence": "I need a little water.",
+      "sentenceZh": "我需要一點水。"
+    },
+    {
+      "id": "word-0052",
+      "word": "can",
+      "zh": "（鐵、鋁）罐",
+      "ipa": "/kæn/",
+      "pos": "名詞 n.",
+      "sentence": "This is a can.",
+      "sentenceZh": "這是一個罐子。"
+    },
+    {
+      "id": "word-0053",
+      "word": "pancake",
+      "zh": "鬆餅",
+      "ipa": "/ˈpænkeɪk/",
+      "pos": "名詞 n.",
+      "sentence": "I like pancakes.",
+      "sentenceZh": "我喜歡鬆餅。"
+    },
+    {
+      "id": "word-0054",
+      "word": "help",
+      "zh": "幫助",
+      "ipa": "/help/",
+      "pos": "動詞 v.",
+      "sentence": "Can you help me?",
+      "sentenceZh": "你可以幫我嗎？",
+      "forms": {
+        "ing": "helping",
+        "past": "helped",
+        "pp": "helped"
+      }
+    },
+    {
+      "id": "word-0055",
+      "word": "how many",
+      "zh": "多少（個）",
+      "ipa": "/haʊ ˈmeni/",
+      "pos": "片語 phr.",
+      "sentence": "How many apples are there?",
+      "sentenceZh": "有多少個蘋果？"
+    },
+    {
+      "id": "word-0056",
+      "word": "give",
+      "zh": "給",
+      "ipa": "/ɡɪv/",
+      "pos": "動詞 v.",
+      "sentence": "Please give me water.",
+      "sentenceZh": "請給我水。",
+      "forms": {
+        "ing": "giving",
+        "past": "gave",
+        "pp": "given"
+      }
+    },
+    {
+      "id": "word-0057",
+      "word": "need",
+      "zh": "需要",
+      "ipa": "/niːd/",
+      "pos": "動詞 v.",
+      "sentence": "I need some flour.",
+      "sentenceZh": "我需要一些麵粉。",
+      "forms": {
+        "ing": "needing",
+        "past": "needed",
+        "pp": "needed"
+      }
+    },
+    {
+      "id": "word-0058",
+      "word": "flour",
+      "zh": "麵粉",
+      "ipa": "/ˈflaʊər/",
+      "pos": "名詞 n.",
+      "sentence": "We need flour.",
+      "sentenceZh": "我們需要麵粉。"
+    },
+    {
+      "id": "word-0059",
+      "word": "of course",
+      "zh": "當然",
+      "ipa": "/əv ˈkɔːrs/",
+      "pos": "片語 phr.",
+      "sentence": "Of course you can.",
+      "sentenceZh": "你當然可以。"
+    },
+    {
+      "id": "word-0060",
+      "word": "which",
+      "zh": "哪一個",
+      "ipa": "/wɪtʃ/",
+      "pos": "代名詞 pron.",
+      "sentence": "Which one do you want?",
+      "sentenceZh": "你想要哪一個？"
+    },
+    {
+      "id": "word-0061",
+      "word": "enough",
+      "zh": "足夠的；足夠地",
+      "ipa": "/ɪˈnʌf/",
+      "pos": "形容詞／副詞 adj./adv.",
+      "sentence": "We have enough flour.",
+      "sentenceZh": "我們有足夠的麵粉。"
+    },
+    {
+      "id": "word-0062",
+      "word": "yummy",
+      "zh": "美味的；好吃的",
+      "ipa": "/ˈjʌmi/",
+      "pos": "形容詞 adj.",
+      "sentence": "The pancakes are yummy.",
+      "sentenceZh": "這些鬆餅很好吃。"
+    },
+    {
+      "id": "word-0063",
+      "word": "teach",
+      "zh": "教導",
+      "ipa": "/tiːtʃ/",
+      "pos": "動詞 v.",
+      "sentence": "Can you teach me?",
+      "sentenceZh": "你可以教我嗎？",
+      "forms": {
+        "ing": "teaching",
+        "past": "taught",
+        "pp": "taught"
+      }
+    },
+    {
+      "id": "word-0064",
+      "word": "easy",
+      "zh": "容易的",
+      "ipa": "/ˈiːzi/",
+      "pos": "形容詞 adj.",
+      "sentence": "This recipe is easy.",
+      "sentenceZh": "這份食譜很簡單。"
+    },
+    {
+      "id": "word-0065",
+      "word": "how much",
+      "zh": "多少；多少錢",
+      "ipa": "/haʊ mʌtʃ/",
+      "pos": "片語 phr.",
+      "sentence": "How much sugar do we need?",
+      "sentenceZh": "我們需要多少糖？"
+    },
+    {
+      "id": "word-0066",
+      "word": "delicious",
+      "zh": "美味的",
+      "ipa": "/dɪˈlɪʃəs/",
+      "pos": "形容詞 adj.",
+      "sentence": "The pie is delicious.",
+      "sentenceZh": "這個派很好吃。"
+    },
+    {
+      "id": "word-0067",
+      "word": "difficult",
+      "zh": "困難的",
+      "ipa": "/ˈdɪfɪkəlt/",
+      "pos": "形容詞 adj.",
+      "sentence": "This question is difficult.",
+      "sentenceZh": "這個問題很難。"
+    },
+    {
+      "id": "word-0068",
+      "word": "add",
+      "zh": "加入；增加",
+      "ipa": "/æd/",
+      "pos": "動詞 v.",
+      "sentence": "Add some sugar.",
+      "sentenceZh": "加一些糖。",
+      "forms": {
+        "ing": "adding",
+        "past": "added",
+        "pp": "added"
+      }
+    },
+    {
+      "id": "word-0069",
+      "word": "mix",
+      "zh": "混合",
+      "ipa": "/mɪks/",
+      "pos": "動詞 v.",
+      "sentence": "Mix the flour and water.",
+      "sentenceZh": "把麵粉和水混合。",
+      "forms": {
+        "ing": "mixing",
+        "past": "mixed",
+        "pp": "mixed"
+      }
+    },
+    {
+      "id": "word-0070",
+      "word": "heat",
+      "zh": "加熱；熱",
+      "ipa": "/hiːt/",
+      "pos": "動詞／名詞 v./n.",
+      "sentence": "Heat the pan first.",
+      "sentenceZh": "先把平底鍋加熱。",
+      "forms": {
+        "ing": "heating",
+        "past": "heated",
+        "pp": "heated"
+      }
+    },
+    {
+      "id": "word-0071",
+      "word": "pan",
+      "ipa": "/pæn/",
+      "pos": "名詞 n.",
+      "zh": "平底鍋",
+      "sentence": "The pan is hot.",
+      "sentenceZh": "平底鍋很熱。"
+    },
+    {
+      "id": "word-0072",
+      "word": "butter",
+      "ipa": "/ˈbʌtər/",
+      "pos": "名詞 n.",
+      "zh": "奶油",
+      "sentence": "Add some butter.",
+      "sentenceZh": "加一些奶油。"
+    },
+    {
+      "id": "word-0073",
+      "word": "round",
+      "ipa": "/raʊnd/",
+      "pos": "形容詞 adj.",
+      "zh": "圓形的",
+      "sentence": "The pancake is round.",
+      "sentenceZh": "鬆餅是圓形的。"
+    },
+    {
+      "id": "word-0074",
+      "word": "batter",
+      "ipa": "/ˈbætər/",
+      "pos": "名詞 n.",
+      "zh": "麵糊",
+      "sentence": "The batter is ready.",
+      "sentenceZh": "麵糊準備好了。"
+    },
+    {
+      "id": "word-0075",
+      "word": "until",
+      "ipa": "/ənˈtɪl/",
+      "pos": "連接詞 conj.",
+      "zh": "直到...為止",
+      "sentence": "Wait until it is brown.",
+      "sentenceZh": "等到它變成棕色。"
+    },
+    {
+      "id": "word-0076",
+      "word": "brown",
+      "ipa": "/braʊn/",
+      "pos": "名詞 n.／形容詞 adj.",
+      "zh": "棕色（的）",
+      "sentence": "The cake is brown.",
+      "sentenceZh": "蛋糕是棕色的。"
+    },
+    {
+      "id": "word-0077",
+      "word": "both",
+      "ipa": "/boʊθ/",
+      "pos": "代名詞 pron.／形容詞 adj.",
+      "zh": "兩者（都）",
+      "sentence": "Both boys are ready.",
+      "sentenceZh": "兩個男孩都準備好了。"
+    },
+    {
+      "id": "word-0078",
+      "word": "ready",
+      "ipa": "/ˈredi/",
+      "pos": "形容詞 adj.",
+      "zh": "準備好的",
+      "sentence": "Dinner is ready.",
+      "sentenceZh": "晚餐準備好了。"
+    },
+    {
+      "id": "word-0079",
+      "word": "yesterday",
+      "ipa": "/ˈjestərdeɪ/",
+      "pos": "副詞 adv.／名詞 n.",
+      "zh": "昨天",
+      "sentence": "I went there yesterday.",
+      "sentenceZh": "我昨天去那裡。"
+    },
+    {
+      "id": "word-0080",
+      "word": "beach",
+      "ipa": "/biːtʃ/",
+      "pos": "名詞 n.",
+      "zh": "海灘",
+      "sentence": "We went to the beach.",
+      "sentenceZh": "我們去了海灘。"
+    },
+    {
+      "id": "word-0081",
+      "word": "trash",
+      "ipa": "/træʃ/",
+      "pos": "名詞 n.",
+      "zh": "垃圾",
+      "sentence": "Pick up the trash.",
+      "sentenceZh": "把垃圾撿起來。"
+    },
+    {
+      "id": "word-0082",
+      "word": "ago",
+      "ipa": "/əˈɡoʊ/",
+      "pos": "副詞 adv.",
+      "zh": "以前",
+      "sentence": "I saw him two days ago.",
+      "sentenceZh": "我兩天前看到他。"
+    },
+    {
+      "id": "word-0083",
+      "word": "visit",
+      "ipa": "/ˈvɪzɪt/",
+      "pos": "動詞 v.",
+      "zh": "拜訪",
+      "sentence": "I visit my aunt.",
+      "sentenceZh": "我拜訪我的阿姨。",
+      "forms": {
+        "ing": "visiting",
+        "past": "visited",
+        "pp": "visited"
+      }
+    },
+    {
+      "id": "word-0084",
+      "word": "island",
+      "ipa": "/ˈaɪlənd/",
+      "pos": "名詞 n.",
+      "zh": "島嶼",
+      "sentence": "This island is beautiful.",
+      "sentenceZh": "這座島很漂亮。"
+    },
+    {
+      "id": "word-0085",
+      "word": "a few",
+      "ipa": "/ə fjuː/",
+      "pos": "片語 phr.",
+      "zh": "幾個；一些",
+      "sentence": "I have a few books.",
+      "sentenceZh": "我有幾本書。"
+    },
+    {
+      "id": "word-0086",
+      "word": "sea",
+      "ipa": "/siː/",
+      "pos": "名詞 n.",
+      "zh": "海",
+      "sentence": "The sea is blue.",
+      "sentenceZh": "海是藍色的。"
+    },
+    {
+      "id": "word-0087",
+      "word": "stop",
+      "ipa": "/stɑːp/",
+      "pos": "動詞 v.",
+      "zh": "停止",
+      "sentence": "Please stop here.",
+      "sentenceZh": "請在這裡停下來。",
+      "forms": {
+        "ing": "stopping",
+        "past": "stopped",
+        "pp": "stopped"
+      }
+    },
+    {
+      "id": "word-0088",
+      "word": "happen",
+      "ipa": "/ˈhæpən/",
+      "pos": "動詞 v.",
+      "zh": "發生",
+      "sentence": "What happened?",
+      "sentenceZh": "發生了什麼事？",
+      "forms": {
+        "ing": "happening",
+        "past": "happened",
+        "pp": "happened"
+      }
+    },
+    {
+      "id": "word-0089",
+      "word": "dead",
+      "ipa": "/ded/",
+      "pos": "形容詞 adj.",
+      "zh": "死亡的",
+      "sentence": "The fish is dead.",
+      "sentenceZh": "魚死了。"
+    },
+    {
+      "id": "word-0090",
+      "word": "warm",
+      "ipa": "/wɔːrm/",
+      "pos": "形容詞 adj.",
+      "zh": "溫暖的",
+      "sentence": "The water is warm.",
+      "sentenceZh": "水是溫暖的。"
+    },
+    {
+      "id": "word-0091",
+      "word": "rainforest",
+      "ipa": "/ˈreɪnfɔːrɪst/",
+      "pos": "名詞 n.",
+      "zh": "雨林",
+      "sentence": "The rainforest is green.",
+      "sentenceZh": "雨林是綠色的。"
+    },
+    {
+      "id": "word-0092",
+      "word": "die",
+      "ipa": "/daɪ/",
+      "pos": "動詞 v.",
+      "zh": "死亡",
+      "sentence": "Plants die without water.",
+      "sentenceZh": "植物沒有水會死亡。",
+      "forms": {
+        "ing": "dying",
+        "past": "died",
+        "pp": "died"
+      }
+    },
+    {
+      "id": "word-0093",
+      "word": "by",
+      "ipa": "/baɪ/",
+      "pos": "介系詞 prep.",
+      "zh": "在...旁邊",
+      "sentence": "The house is by the river.",
+      "sentenceZh": "房子在河邊。"
+    },
+    {
+      "id": "word-0094",
+      "word": "How come?",
+      "ipa": "/haʊ kʌm/",
+      "pos": "句型 sentence pattern",
+      "zh": "怎麼會？；為什麼？",
+      "sentence": "How come you are late?",
+      "sentenceZh": "你為什麼遲到？"
+    },
+    {
+      "id": "word-0095",
+      "word": "then",
+      "ipa": "/ðen/",
+      "pos": "副詞 adv.",
+      "zh": "那時候",
+      "sentence": "We went home then.",
+      "sentenceZh": "那時我們回家了。"
+    },
+    {
+      "id": "word-0096",
+      "word": "busy",
+      "ipa": "/ˈbɪzi/",
+      "pos": "形容詞 adj.",
+      "zh": "忙碌的",
+      "sentence": "I am busy today.",
+      "sentenceZh": "我今天很忙。"
+    },
+    {
+      "id": "word-0097",
+      "word": "river",
+      "ipa": "/ˈrɪvər/",
+      "pos": "名詞 n.",
+      "zh": "河流",
+      "sentence": "The river is long.",
+      "sentenceZh": "這條河很長。"
+    },
+    {
+      "id": "word-0098",
+      "word": "lake",
+      "ipa": "/leɪk/",
+      "pos": "名詞 n.",
+      "zh": "湖泊",
+      "sentence": "The lake is quiet.",
+      "sentenceZh": "湖很安靜。"
+    },
+    {
+      "id": "word-0099",
+      "word": "hill",
+      "ipa": "/hɪl/",
+      "pos": "名詞 n.",
+      "zh": "山丘",
+      "sentence": "We walked up the hill.",
+      "sentenceZh": "我們走上山丘。"
+    },
+    {
+      "id": "word-0100",
+      "word": "mountain",
+      "ipa": "/ˈmaʊntən/",
+      "pos": "名詞 n.",
+      "zh": "山",
+      "sentence": "The mountain is high.",
+      "sentenceZh": "這座山很高。"
+    },
+    {
+      "id": "word-0101",
+      "word": "camp",
+      "ipa": "/kæmp/",
+      "pos": "名詞 n.／動詞 v.",
+      "zh": "露營；紮營",
+      "sentence": "We camp by the lake.",
+      "sentenceZh": "我們在湖邊露營。",
+      "forms": {
+        "ing": "camping",
+        "past": "camped",
+        "pp": "camped"
+      }
+    },
+    {
+      "id": "word-0102",
+      "word": "climb",
+      "ipa": "/klaɪm/",
+      "pos": "動詞 v.",
+      "zh": "爬（山）",
+      "sentence": "I climb the mountain.",
+      "sentenceZh": "我爬山。",
+      "forms": {
+        "ing": "climbing",
+        "past": "climbed",
+        "pp": "climbed"
+      }
+    },
+    {
+      "id": "word-0103",
+      "word": "row a boat",
+      "ipa": "/roʊ ə boʊt/",
+      "pos": "動詞片語 v. phr.",
+      "zh": "划船",
+      "sentence": "We row a boat.",
+      "sentenceZh": "我們划船。",
+      "forms": {
+        "ing": "rowing a boat",
+        "past": "rowed a boat",
+        "pp": "rowed a boat"
+      }
+    },
+    {
+      "id": "word-0104",
+      "word": "plant",
+      "ipa": "/plænt/",
+      "pos": "名詞 n.／動詞 v.",
+      "zh": "種植；植物",
+      "sentence": "I plant a tree.",
+      "sentenceZh": "我種一棵樹。",
+      "forms": {
+        "ing": "planting",
+        "past": "planted",
+        "pp": "planted"
+      }
+    },
+    {
+      "id": "word-0105",
+      "word": "hike",
+      "ipa": "/haɪk/",
+      "pos": "動詞 v.／名詞 n.",
+      "zh": "健行",
+      "sentence": "We hike on Sunday.",
+      "sentenceZh": "我們星期日健行。",
+      "forms": {
+        "ing": "hiking",
+        "past": "hiked",
+        "pp": "hiked"
+      }
+    },
+    {
+      "id": "word-0106",
+      "word": "picnic",
+      "ipa": "/ˈpɪknɪk/",
+      "pos": "名詞 n.",
+      "zh": "野餐",
+      "sentence": "We have a picnic.",
+      "sentenceZh": "我們去野餐。"
+    },
+    {
+      "id": "word-0107",
+      "word": "last",
+      "ipa": "/læst/",
+      "pos": "形容詞 adj.",
+      "zh": "上一個的",
+      "sentence": "Last week was fun.",
+      "sentenceZh": "上週很好玩。",
+      "forms": {
+        "ing": "lasting",
+        "past": "lasted",
+        "pp": "lasted"
+      }
+    },
+    {
+      "id": "word-0108",
+      "word": "live",
+      "ipa": "/lɪv/",
+      "pos": "動詞 v.",
+      "zh": "居住",
+      "sentence": "I live in Taiwan.",
+      "sentenceZh": "我住在台灣。",
+      "forms": {
+        "ing": "living",
+        "past": "lived",
+        "pp": "lived"
+      }
+    },
+    {
+      "id": "word-0109",
+      "word": "playground",
+      "ipa": "/ˈpleɪɡraʊnd/",
+      "pos": "名詞 n.",
+      "zh": "遊戲場；操場",
+      "sentence": "Kids play on the playground.",
+      "sentenceZh": "孩子們在遊樂場玩。"
+    },
+    {
+      "id": "word-0110",
+      "word": "everything",
+      "ipa": "/ˈevriˌθɪŋ/",
+      "pos": "代名詞 pron.",
+      "zh": "每樣事物",
+      "sentence": "Everything is OK.",
+      "sentenceZh": "一切都沒問題。"
+    },
+    {
+      "id": "word-0111",
+      "word": "change",
+      "ipa": "/tʃeɪndʒ/",
+      "pos": "動詞 v.／名詞 n.",
+      "zh": "改變",
+      "sentence": "Things can change.",
+      "sentenceZh": "事情會改變。",
+      "forms": {
+        "ing": "changing",
+        "past": "changed",
+        "pp": "changed"
+      }
+    },
+    {
+      "id": "word-0112",
+      "word": "burn",
+      "ipa": "/bɜːrn/",
+      "pos": "動詞 v.",
+      "zh": "燃燒",
+      "sentence": "Do not burn trash.",
+      "sentenceZh": "不要燃燒垃圾。",
+      "forms": {
+        "ing": "burning",
+        "past": "burned",
+        "pp": "burned"
+      }
+    },
+    {
+      "id": "word-0113",
+      "word": "oil",
+      "ipa": "/ɔɪl/",
+      "pos": "名詞 n.",
+      "zh": "油",
+      "sentence": "Oil is important.",
+      "sentenceZh": "油很重要。"
+    },
+    {
+      "id": "word-0114",
+      "word": "sell",
+      "ipa": "/sel/",
+      "pos": "動詞 v.",
+      "zh": "賣",
+      "sentence": "They sell fruit.",
+      "sentenceZh": "他們賣水果。",
+      "forms": {
+        "ing": "selling",
+        "past": "sold",
+        "pp": "sold"
+      }
+    },
+    {
+      "id": "word-0115",
+      "word": "make money",
+      "ipa": "/meɪk ˈmʌni/",
+      "pos": "動詞片語 v. phr.",
+      "zh": "賺錢",
+      "sentence": "He wants to make money.",
+      "sentenceZh": "他想賺錢。",
+      "forms": {
+        "ing": "making money",
+        "past": "made money",
+        "pp": "made money"
+      }
+    },
+    {
+      "id": "word-0116",
+      "word": "miss",
+      "ipa": "/mɪs/",
+      "pos": "動詞 v.",
+      "zh": "想念",
+      "sentence": "I miss my home.",
+      "sentenceZh": "我想念我的家。",
+      "forms": {
+        "ing": "missing",
+        "past": "missed",
+        "pp": "missed"
+      }
+    },
+    {
+      "id": "word-0117",
+      "word": "little",
+      "ipa": "/ˈlɪtəl/",
+      "pos": "形容詞 adj.",
+      "zh": "小的",
+      "sentence": "It is a little dog.",
+      "sentenceZh": "牠是一隻小狗。"
+    },
+    {
+      "id": "word-0118",
+      "word": "little by little",
+      "ipa": "/ˈlɪtəl baɪ ˈlɪtəl/",
+      "pos": "片語 phr.",
+      "zh": "一點一點地；逐漸地",
+      "sentence": "I learn little by little.",
+      "sentenceZh": "我一點一點地學。"
+    },
+    {
+      "id": "word-0119",
+      "word": "way",
+      "ipa": "/weɪ/",
+      "pos": "名詞 n.",
+      "zh": "方式",
+      "sentence": "This is a good way.",
+      "sentenceZh": "這是一個好方法。"
+    },
+    {
+      "id": "word-0120",
+      "word": "coral reef",
+      "ipa": "/ˈkɔːrəl riːf/",
+      "pos": "名詞 n.",
+      "zh": "珊瑚礁",
+      "sentence": "The coral reef is beautiful.",
+      "sentenceZh": "珊瑚礁很美。"
+    },
+    {
+      "id": "word-0121",
+      "word": "palm",
+      "ipa": "/pɑːm/",
+      "pos": "名詞 n.",
+      "zh": "棕櫚",
+      "sentence": "A palm tree is tall.",
+      "sentenceZh": "棕櫚樹很高。"
+    },
+    {
+      "id": "word-0122",
+      "word": "company",
+      "ipa": "/ˈkʌmpəni/",
+      "pos": "名詞 n.",
+      "zh": "公司",
+      "sentence": "My father works for a company.",
+      "sentenceZh": "我爸爸在一家公司工作。"
+    },
+    {
+      "id": "word-0123",
+      "word": "village",
+      "ipa": "/ˈvɪlɪdʒ/",
+      "pos": "名詞 n.",
+      "zh": "村莊",
+      "sentence": "The village is small.",
+      "sentenceZh": "這個村莊很小。"
+    },
+    {
+      "id": "word-0124",
+      "word": "adult",
+      "ipa": "/əˈdʌlt/",
+      "pos": "名詞 n.",
+      "zh": "成人",
+      "sentence": "An adult can help you.",
+      "sentenceZh": "成人可以幫助你。"
+    },
+    {
+      "id": "word-0125",
+      "word": "airport",
+      "ipa": "/ˈerpɔːrt/",
+      "pos": "名詞 n.",
+      "zh": "機場",
+      "sentence": "We go to the airport.",
+      "sentenceZh": "我們去機場。"
+    },
+    {
+      "id": "word-0126",
+      "word": "travel",
+      "ipa": "/ˈtrævəl/",
+      "pos": "動詞 v.／名詞 n.",
+      "zh": "旅行；行進",
+      "sentence": "I like to travel.",
+      "sentenceZh": "我喜歡旅行。",
+      "forms": {
+        "ing": "traveling",
+        "past": "traveled",
+        "pp": "traveled"
+      }
+    },
+    {
+      "id": "word-0127",
+      "word": "rest",
+      "ipa": "/rest/",
+      "pos": "動詞 v.／名詞 n.",
+      "zh": "休息",
+      "sentence": "Please take a rest.",
+      "sentenceZh": "請休息一下。",
+      "forms": {
+        "ing": "resting",
+        "past": "rested",
+        "pp": "rested"
+      }
+    },
+    {
+      "id": "word-0128",
+      "word": "hotel",
+      "ipa": "/hoʊˈtel/",
+      "pos": "名詞 n.",
+      "zh": "飯店",
+      "sentence": "The hotel is nice.",
+      "sentenceZh": "這間飯店很好。"
+    },
+    {
+      "id": "word-0129",
+      "word": "plane",
+      "ipa": "/pleɪn/",
+      "pos": "名詞 n.",
+      "zh": "飛機",
+      "sentence": "The plane is fast.",
+      "sentenceZh": "飛機很快。"
+    },
+    {
+      "id": "word-0130",
+      "word": "the sights",
+      "ipa": "/ðə saɪts/",
+      "pos": "名詞片語 n. phr.",
+      "zh": "風景；名勝",
+      "sentence": "We enjoy the sights.",
+      "sentenceZh": "我們欣賞風景。"
+    },
+    {
+      "id": "word-0131",
+      "word": "bookstore",
+      "ipa": "/ˈbʊkstɔːr/",
+      "pos": "名詞 n.",
+      "zh": "書店",
+      "sentence": "I go to the bookstore.",
+      "sentenceZh": "我去書店。"
+    },
+    {
+      "id": "word-0132",
+      "word": "buy",
+      "ipa": "/baɪ/",
+      "pos": "動詞 v.",
+      "zh": "購買",
+      "sentence": "I buy a book.",
+      "sentenceZh": "我買一本書。",
+      "forms": {
+        "ing": "buying",
+        "past": "bought",
+        "pp": "bought"
+      }
+    },
+    {
+      "id": "word-0133",
+      "word": "just",
+      "ipa": "/dʒʌst/",
+      "pos": "副詞 adv.",
+      "zh": "剛才；就；只",
+      "sentence": "I just got home.",
+      "sentenceZh": "我剛到家。"
+    },
+    {
+      "id": "word-0134",
+      "word": "learn",
+      "ipa": "/lɜːrn/",
+      "pos": "動詞 v.",
+      "zh": "學習",
+      "sentence": "I learn English.",
+      "sentenceZh": "我學英文。",
+      "forms": {
+        "ing": "learning",
+        "past": "learned",
+        "pp": "learned"
+      }
+    },
+    {
+      "id": "word-0135",
+      "word": "story",
+      "ipa": "/ˈstɔːri/",
+      "pos": "名詞 n.",
+      "zh": "故事",
+      "sentence": "This story is funny.",
+      "sentenceZh": "這個故事很好笑。"
+    },
+    {
+      "id": "word-0136",
+      "word": "cool",
+      "ipa": "/kuːl/",
+      "pos": "形容詞 adj.",
+      "zh": "酷的",
+      "sentence": "That is cool.",
+      "sentenceZh": "那很酷。"
+    },
+    {
+      "id": "word-0137",
+      "word": "train",
+      "ipa": "/treɪn/",
+      "pos": "名詞 n.",
+      "zh": "火車",
+      "sentence": "The train is coming.",
+      "sentenceZh": "火車來了。"
+    },
+    {
+      "id": "word-0138",
+      "word": "cold",
+      "ipa": "/koʊld/",
+      "pos": "形容詞 adj.",
+      "zh": "冷的",
+      "sentence": "It is cold today.",
+      "sentenceZh": "今天很冷。"
+    },
+    {
+      "id": "word-0139",
+      "word": "try",
+      "ipa": "/traɪ/",
+      "pos": "動詞 v.",
+      "zh": "嘗試",
+      "sentence": "I will try again.",
+      "sentenceZh": "我會再試一次。",
+      "forms": {
+        "ing": "trying",
+        "past": "tried",
+        "pp": "tried"
+      }
+    },
+    {
+      "id": "word-0140",
+      "word": "way",
+      "ipa": "/weɪ/",
+      "pos": "名詞 n.",
+      "zh": "距離；路線",
+      "sentence": "This is a good way.",
+      "sentenceZh": "這是一個好方法。"
+    },
+    {
+      "id": "word-0141",
+      "word": "take",
+      "ipa": "/teɪk/",
+      "pos": "動詞 v.",
+      "zh": "帶；拿；取",
+      "sentence": "Take this bag.",
+      "sentenceZh": "拿這個包包。",
+      "forms": {
+        "ing": "taking",
+        "past": "took",
+        "pp": "taken"
+      }
+    },
+    {
+      "id": "word-0142",
+      "word": "the other day",
+      "ipa": "/ði ˈʌðər deɪ/",
+      "pos": "片語 phr.",
+      "zh": "前幾天",
+      "sentence": "I saw her the other day.",
+      "sentenceZh": "我前幾天看到她。"
+    },
+    {
+      "id": "word-0143",
+      "word": "station",
+      "ipa": "/ˈsteɪʃən/",
+      "pos": "名詞 n.",
+      "zh": "車站；局",
+      "sentence": "The station is near.",
+      "sentenceZh": "車站很近。"
+    },
+    {
+      "id": "word-0144",
+      "word": "department store",
+      "ipa": "/dɪˈpɑːrtmənt stɔːr/",
+      "pos": "名詞 n.",
+      "zh": "百貨公司",
+      "sentence": "We went to a department store.",
+      "sentenceZh": "我們去了百貨公司。"
+    },
+    {
+      "id": "word-0145",
+      "word": "restaurant",
+      "ipa": "/ˈrestərɑːnt/",
+      "pos": "名詞 n.",
+      "zh": "餐廳",
+      "sentence": "This restaurant is famous.",
+      "sentenceZh": "這間餐廳很有名。"
+    },
+    {
+      "id": "word-0146",
+      "word": "theater",
+      "ipa": "/ˈθiːətər/",
+      "pos": "名詞 n.",
+      "zh": "電影院",
+      "sentence": "We went to the theater.",
+      "sentenceZh": "我們去了電影院。"
+    },
+    {
+      "id": "word-0147",
+      "word": "market",
+      "ipa": "/ˈmɑːrkɪt/",
+      "pos": "名詞 n.",
+      "zh": "市場",
+      "sentence": "The market is busy.",
+      "sentenceZh": "市場很熱鬧。"
+    },
+    {
+      "id": "word-0148",
+      "word": "temple",
+      "ipa": "/ˈtempəl/",
+      "pos": "名詞 n.",
+      "zh": "寺廟",
+      "sentence": "The temple is old.",
+      "sentenceZh": "這座寺廟很古老。"
+    },
+    {
+      "id": "word-0149",
+      "word": "famous",
+      "ipa": "/ˈfeɪməs/",
+      "pos": "形容詞 adj.",
+      "zh": "有名的",
+      "sentence": "He is famous.",
+      "sentenceZh": "他很有名。"
+    },
+    {
+      "id": "word-0150",
+      "word": "during",
+      "ipa": "/ˈdʊrɪŋ/",
+      "pos": "介系詞 prep.",
+      "zh": "在...期間",
+      "sentence": "I read during lunch.",
+      "sentenceZh": "我在午餐期間閱讀。"
+    },
+    {
+      "id": "word-0151",
+      "word": "besides",
+      "ipa": "/bɪˈsaɪdz/",
+      "pos": "介系詞 prep.",
+      "zh": "除...之外",
+      "sentence": "Besides English, I like art.",
+      "sentenceZh": "除了英文，我也喜歡藝術。"
+    },
+    {
+      "id": "word-0152",
+      "word": "fall in love",
+      "ipa": "/fɔːl ɪn lʌv/",
+      "pos": "動詞片語 v. phr.",
+      "zh": "墜入情網",
+      "sentence": "They fall in love.",
+      "sentenceZh": "他們墜入情網。",
+      "forms": {
+        "ing": "falling in love",
+        "past": "fell in love",
+        "pp": "fallen in love"
+      }
+    },
+    {
+      "id": "word-0153",
+      "word": "age",
+      "ipa": "/eɪdʒ/",
+      "pos": "名詞 n.",
+      "zh": "年紀",
+      "sentence": "What is your age?",
+      "sentenceZh": "你幾歲？"
+    },
+    {
+      "id": "word-0154",
+      "word": "lose",
+      "ipa": "/luːz/",
+      "pos": "動詞 v.",
+      "zh": "失去",
+      "sentence": "Do not lose your bag.",
+      "sentenceZh": "不要弄丟你的包包。",
+      "forms": {
+        "ing": "losing",
+        "past": "lost",
+        "pp": "lost"
+      }
+    },
+    {
+      "id": "word-0155",
+      "word": "cry",
+      "ipa": "/kraɪ/",
+      "pos": "動詞 v.",
+      "zh": "哭泣",
+      "sentence": "Do not cry.",
+      "sentenceZh": "不要哭。",
+      "forms": {
+        "ing": "crying",
+        "past": "cried",
+        "pp": "cried"
+      }
+    },
+    {
+      "id": "word-0156",
+      "word": "hide",
+      "ipa": "/haɪd/",
+      "pos": "動詞 v.",
+      "zh": "躲藏",
+      "sentence": "The cat can hide.",
+      "sentenceZh": "貓會躲藏。",
+      "forms": {
+        "ing": "hiding",
+        "past": "hid",
+        "pp": "hidden"
+      }
+    },
+    {
+      "id": "word-0157",
+      "word": "build",
+      "ipa": "/bɪld/",
+      "pos": "動詞 v.",
+      "zh": "建造",
+      "sentence": "They build a house.",
+      "sentenceZh": "他們建造一棟房子。",
+      "forms": {
+        "ing": "building",
+        "past": "built",
+        "pp": "built"
+      }
+    },
+    {
+      "id": "word-0158",
+      "word": "trip",
+      "ipa": "/trɪp/",
+      "pos": "名詞 n.",
+      "zh": "旅行；行程",
+      "sentence": "We had a good trip.",
+      "sentenceZh": "我們有一趟很棒的旅行。"
+    },
+    {
+      "id": "word-0159",
+      "word": "sadly",
+      "ipa": "/ˈsædli/",
+      "pos": "副詞 adv.",
+      "zh": "令人傷心地",
+      "sentence": "Sadly, he left.",
+      "sentenceZh": "令人傷心地，他離開了。"
+    },
+    {
+      "id": "word-0160",
+      "word": "last",
+      "ipa": "/læst/",
+      "pos": "形容詞 adj.",
+      "zh": "持續",
+      "sentence": "Last week was fun.",
+      "sentenceZh": "上週很好玩。",
+      "forms": {
+        "ing": "lasting",
+        "past": "lasted",
+        "pp": "lasted"
+      }
+    },
+    {
+      "id": "word-0161",
+      "word": "building",
+      "ipa": "/ˈbɪldɪŋ/",
+      "pos": "名詞 n.",
+      "zh": "建築物",
+      "sentence": "The building is tall.",
+      "sentenceZh": "這棟建築物很高。"
+    },
+    {
+      "id": "word-0162",
+      "word": "flea",
+      "ipa": "/fliː/",
+      "pos": "名詞 n.",
+      "zh": "跳蚤",
+      "sentence": "A flea is small.",
+      "sentenceZh": "跳蚤很小。"
+    },
+    {
+      "id": "word-0163",
+      "word": "golden",
+      "ipa": "/ˈɡoʊldən/",
+      "pos": "形容詞 adj.",
+      "zh": "金黃色的",
+      "sentence": "The sun is golden.",
+      "sentenceZh": "太陽是金黃色的。"
+    },
+    {
+      "id": "word-0164",
+      "word": "well known",
+      "ipa": "/ˌwel ˈnoʊn/",
+      "pos": "形容詞 adj.",
+      "zh": "著名的",
+      "sentence": "The place is well known.",
+      "sentenceZh": "這個地方很有名。"
+    },
+    {
+      "id": "word-0165",
+      "word": "forever",
+      "ipa": "/fərˈevər/",
+      "pos": "副詞 adv.",
+      "zh": "永遠",
+      "sentence": "I will remember it forever.",
+      "sentenceZh": "我會永遠記得它。"
+    },
+    {
+      "id": "word-0166",
+      "word": "science",
+      "ipa": "/ˈsaɪəns/",
+      "pos": "名詞 n.",
+      "zh": "科學",
+      "sentence": "I like science.",
+      "sentenceZh": "我喜歡科學。"
+    },
+    {
+      "id": "word-0167",
+      "word": "camp",
+      "ipa": "/kæmp/",
+      "pos": "名詞 n.／動詞 v.",
+      "zh": "營隊；露營",
+      "sentence": "We camp by the lake.",
+      "sentenceZh": "我們在湖邊露營。",
+      "forms": {
+        "ing": "camping",
+        "past": "camped",
+        "pp": "camped"
+      }
+    },
+    {
+      "id": "word-0168",
+      "word": "visit",
+      "ipa": "/ˈvɪzɪt/",
+      "pos": "動詞 v.",
+      "zh": "造訪；拜訪",
+      "sentence": "I visit my aunt.",
+      "sentenceZh": "我拜訪我的阿姨。",
+      "forms": {
+        "ing": "visiting",
+        "past": "visited",
+        "pp": "visited"
+      }
+    },
+    {
+      "id": "word-0169",
+      "word": "art",
+      "ipa": "/ɑːrt/",
+      "pos": "名詞 n.",
+      "zh": "藝術；美術",
+      "sentence": "I like art.",
+      "sentenceZh": "我喜歡藝術。"
+    },
+    {
+      "id": "word-0170",
+      "word": "museum",
+      "ipa": "/mjuˈziːəm/",
+      "pos": "名詞 n.",
+      "zh": "博物館",
+      "sentence": "We visited a museum.",
+      "sentenceZh": "我們參觀了博物館。"
+    },
+    {
+      "id": "word-0171",
+      "word": "ago",
+      "ipa": "/əˈɡoʊ/",
+      "pos": "副詞 adv.",
+      "zh": "之前",
+      "sentence": "I saw him two days ago.",
+      "sentenceZh": "我兩天前看到他。"
+    },
+    {
+      "id": "word-0172",
+      "word": "computer",
+      "ipa": "/kəmˈpjuːtər/",
+      "pos": "名詞 n.",
+      "zh": "電腦",
+      "sentence": "I use a computer.",
+      "sentenceZh": "我使用電腦。"
+    },
+    {
+      "id": "word-0173",
+      "word": "before",
+      "ipa": "/bɪˈfɔːr/",
+      "pos": "介系詞 prep.／副詞 adv.",
+      "zh": "在...之前；以前",
+      "sentence": "Wash your hands before dinner.",
+      "sentenceZh": "晚餐前洗手。"
+    },
+    {
+      "id": "word-0174",
+      "word": "yesterday",
+      "ipa": "/ˈjestərdeɪ/",
+      "pos": "副詞 adv.／名詞 n.",
+      "zh": "昨天",
+      "sentence": "I went there yesterday.",
+      "sentenceZh": "我昨天去那裡。"
+    },
+    {
+      "id": "word-0175",
+      "word": "surf the Internet",
+      "ipa": "/sɜːrf ði ˈɪntərnet/",
+      "pos": "動詞片語 v. phr.",
+      "zh": "上網",
+      "sentence": "I surf the Internet.",
+      "sentenceZh": "我上網。",
+      "forms": {
+        "ing": "surfing the Internet",
+        "past": "surfed the Internet",
+        "pp": "surfed the Internet"
+      }
+    },
+    {
+      "id": "word-0176",
+      "word": "minute",
+      "ipa": "/ˈmɪnɪt/",
+      "pos": "名詞 n.",
+      "zh": "分鐘",
+      "sentence": "Wait a minute.",
+      "sentenceZh": "等一下。"
+    },
+    {
+      "id": "word-0177",
+      "word": "hour",
+      "ipa": "/ˈaʊər/",
+      "pos": "名詞 n.",
+      "zh": "小時",
+      "sentence": "It takes one hour.",
+      "sentenceZh": "這需要一小時。"
+    },
+    {
+      "id": "word-0178",
+      "word": "story",
+      "ipa": "/ˈstɔːri/",
+      "pos": "名詞 n.",
+      "zh": "故事",
+      "sentence": "This story is funny.",
+      "sentenceZh": "這個故事很好笑。"
+    },
+    {
+      "id": "word-0179",
+      "word": "lazy",
+      "ipa": "/ˈleɪzi/",
+      "pos": "形容詞 adj.",
+      "zh": "懶惰的",
+      "sentence": "The cat is lazy.",
+      "sentenceZh": "那隻貓很懶。"
+    },
+    {
+      "id": "word-0180",
+      "word": "even",
+      "ipa": "/ˈiːvən/",
+      "pos": "副詞 adv.",
+      "zh": "甚至",
+      "sentence": "Even kids can help.",
+      "sentenceZh": "甚至小孩也可以幫忙。"
+    },
+    {
+      "id": "word-0181",
+      "word": "should",
+      "ipa": "/ʃʊd/",
+      "pos": "助動詞 aux.",
+      "zh": "應該",
+      "sentence": "You should rest.",
+      "sentenceZh": "你應該休息。"
+    },
+    {
+      "id": "word-0182",
+      "word": "wrong",
+      "ipa": "/rɔːŋ/",
+      "pos": "形容詞 adj.",
+      "zh": "錯誤的",
+      "sentence": "This answer is wrong.",
+      "sentenceZh": "這個答案是錯的。"
+    },
+    {
+      "id": "word-0183",
+      "word": "so",
+      "ipa": "/soʊ/",
+      "pos": "副詞 adv.",
+      "zh": "很；那麼",
+      "sentence": "I am so happy.",
+      "sentenceZh": "我很開心。"
+    },
+    {
+      "id": "word-0184",
+      "word": "just",
+      "ipa": "/dʒʌst/",
+      "pos": "副詞 adv.",
+      "zh": "就；恰好；剛剛",
+      "sentence": "I just got home.",
+      "sentenceZh": "我剛到家。"
+    },
+    {
+      "id": "word-0185",
+      "word": "later",
+      "ipa": "/ˈleɪtər/",
+      "pos": "副詞 adv.",
+      "zh": "稍後",
+      "sentence": "See you later.",
+      "sentenceZh": "待會見。"
+    },
+    {
+      "id": "word-0186",
+      "word": "save",
+      "ipa": "/seɪv/",
+      "pos": "動詞 v.",
+      "zh": "拯救；省下；儲存",
+      "sentence": "We can save water.",
+      "sentenceZh": "我們可以節省水。",
+      "forms": {
+        "ing": "saving",
+        "past": "saved",
+        "pp": "saved"
+      }
+    },
+    {
+      "id": "word-0187",
+      "word": "share",
+      "ipa": "/ʃer/",
+      "pos": "動詞 v.",
+      "zh": "分享",
+      "sentence": "Please share your snack.",
+      "sentenceZh": "請分享你的點心。",
+      "forms": {
+        "ing": "sharing",
+        "past": "shared",
+        "pp": "shared"
+      }
+    },
+    {
+      "id": "word-0188",
+      "word": "snack",
+      "ipa": "/snæk/",
+      "pos": "名詞 n.",
+      "zh": "點心",
+      "sentence": "I want a snack.",
+      "sentenceZh": "我想要點心。"
+    },
+    {
+      "id": "word-0189",
+      "word": "climb",
+      "ipa": "/klaɪm/",
+      "pos": "動詞 v.",
+      "zh": "攀爬",
+      "sentence": "I climb the mountain.",
+      "sentenceZh": "我爬山。",
+      "forms": {
+        "ing": "climbing",
+        "past": "climbed",
+        "pp": "climbed"
+      }
+    },
+    {
+      "id": "word-0190",
+      "word": "kid",
+      "ipa": "/kɪd/",
+      "pos": "名詞 n.／動詞 v.",
+      "zh": "開玩笑；小孩",
+      "sentence": "He is a funny kid.",
+      "sentenceZh": "他是一個有趣的小孩。",
+      "forms": {
+        "ing": "kidding",
+        "past": "kidded",
+        "pp": "kidded"
+      }
+    },
+    {
+      "id": "word-0191",
+      "word": "explain",
+      "ipa": "/ɪkˈspleɪn/",
+      "pos": "動詞 v.",
+      "zh": "解釋",
+      "sentence": "Please explain it.",
+      "sentenceZh": "請解釋它。",
+      "forms": {
+        "ing": "explaining",
+        "past": "explained",
+        "pp": "explained"
+      }
+    },
+    {
+      "id": "word-0192",
+      "word": "leftovers",
+      "ipa": "/ˈleftoʊvərz/",
+      "pos": "名詞 n.",
+      "zh": "剩菜",
+      "sentence": "We eat the leftovers.",
+      "sentenceZh": "我們吃剩菜。"
+    },
+    {
+      "id": "word-0193",
+      "word": "hide-and-seek",
+      "ipa": "/ˌhaɪd ən ˈsiːk/",
+      "pos": "名詞 n.",
+      "zh": "捉迷藏",
+      "sentence": "We play hide-and-seek.",
+      "sentenceZh": "我們玩捉迷藏。"
+    },
+    {
+      "id": "word-0194",
+      "word": "wise",
+      "ipa": "/waɪz/",
+      "pos": "形容詞 adj.",
+      "zh": "有智慧的",
+      "sentence": "My grandma is wise.",
+      "sentenceZh": "我的奶奶很有智慧。"
+    },
+    {
+      "id": "word-0195",
+      "word": "hunt",
+      "ipa": "/hʌnt/",
+      "pos": "動詞 v.",
+      "zh": "打獵",
+      "sentence": "Lions hunt for food.",
+      "sentenceZh": "獅子打獵覓食。",
+      "forms": {
+        "ing": "hunting",
+        "past": "hunted",
+        "pp": "hunted"
+      }
+    },
+    {
+      "id": "word-0196",
+      "word": "learn",
+      "ipa": "/lɜːrn/",
+      "pos": "動詞 v.",
+      "zh": "學習；得知",
+      "sentence": "I learn English.",
+      "sentenceZh": "我學英文。",
+      "forms": {
+        "ing": "learning",
+        "past": "learned",
+        "pp": "learned"
+      }
+    },
+    {
+      "id": "word-0197",
+      "word": "in the end",
+      "ipa": "/ɪn ði end/",
+      "pos": "片語 phr.",
+      "zh": "最後",
+      "sentence": "In the end, we won.",
+      "sentenceZh": "最後，我們贏了。"
+    },
+    {
+      "id": "word-0198",
+      "word": "mountain",
+      "ipa": "/ˈmaʊntən/",
+      "pos": "名詞 n.",
+      "zh": "山",
+      "sentence": "The mountain is high.",
+      "sentenceZh": "這座山很高。"
+    },
+    {
+      "id": "word-0199",
+      "word": "lake",
+      "ipa": "/leɪk/",
+      "pos": "名詞 n.",
+      "zh": "湖",
+      "sentence": "The lake is quiet.",
+      "sentenceZh": "湖很安靜。"
+    },
+    {
+      "id": "word-0200",
+      "word": "island",
+      "ipa": "/ˈaɪlənd/",
+      "pos": "名詞 n.",
+      "zh": "島",
+      "sentence": "This island is beautiful.",
+      "sentenceZh": "這座島很漂亮。"
+    },
+    {
+      "id": "word-0201",
+      "word": "beach",
+      "ipa": "/biːtʃ/",
+      "pos": "名詞 n.",
+      "zh": "海灘",
+      "sentence": "We went to the beach.",
+      "sentenceZh": "我們去了海灘。"
+    },
+    {
+      "id": "word-0202",
+      "word": "river",
+      "ipa": "/ˈrɪvər/",
+      "pos": "名詞 n.",
+      "zh": "河",
+      "sentence": "The river is long.",
+      "sentenceZh": "這條河很長。"
+    },
+    {
+      "id": "word-0203",
+      "word": "hill",
+      "ipa": "/hɪl/",
+      "pos": "名詞 n.",
+      "zh": "小山；丘陵",
+      "sentence": "We walked up the hill.",
+      "sentenceZh": "我們走上山丘。"
+    },
+    {
+      "id": "word-0204",
+      "word": "pond",
+      "ipa": "/pɑːnd/",
+      "pos": "名詞 n.",
+      "zh": "池塘",
+      "sentence": "There is a pond.",
+      "sentenceZh": "那裡有一個池塘。"
+    },
+    {
+      "id": "word-0205",
+      "word": "hike",
+      "ipa": "/haɪk/",
+      "pos": "動詞 v.／名詞 n.",
+      "zh": "健行",
+      "sentence": "We hike on Sunday.",
+      "sentenceZh": "我們星期日健行。",
+      "forms": {
+        "ing": "hiking",
+        "past": "hiked",
+        "pp": "hiked"
+      }
+    },
+    {
+      "id": "word-0206",
+      "word": "swim",
+      "ipa": "/swɪm/",
+      "pos": "動詞 v.",
+      "zh": "游泳",
+      "sentence": "I swim in the pool.",
+      "sentenceZh": "我在游泳池游泳。",
+      "forms": {
+        "ing": "swimming",
+        "past": "swam",
+        "pp": "swum"
+      }
+    },
+    {
+      "id": "word-0207",
+      "word": "airport",
+      "ipa": "/ˈerpɔːrt/",
+      "pos": "名詞 n.",
+      "zh": "機場",
+      "sentence": "We go to the airport.",
+      "sentenceZh": "我們去機場。"
+    },
+    {
+      "id": "word-0208",
+      "word": "bright",
+      "ipa": "/braɪt/",
+      "pos": "形容詞 adj.",
+      "zh": "明亮的；晴朗的",
+      "sentence": "The room is bright.",
+      "sentenceZh": "房間很明亮。"
+    },
+    {
+      "id": "word-0209",
+      "word": "guy",
+      "ipa": "/ɡaɪ/",
+      "pos": "名詞 n.",
+      "zh": "傢伙；人",
+      "sentence": "He is a nice guy.",
+      "sentenceZh": "他是個好人。"
+    },
+    {
+      "id": "word-0210",
+      "word": "suitcase",
+      "ipa": "/ˈsuːtkeɪs/",
+      "pos": "名詞 n.",
+      "zh": "手提箱",
+      "sentence": "My suitcase is heavy.",
+      "sentenceZh": "我的手提箱很重。"
+    },
+    {
+      "id": "word-0211",
+      "word": "through",
+      "ipa": "/θruː/",
+      "pos": "介系詞 prep.",
+      "zh": "通過；穿過",
+      "sentence": "We walk through the park.",
+      "sentenceZh": "我們穿過公園。"
+    },
+    {
+      "id": "word-0212",
+      "word": "bring",
+      "ipa": "/brɪŋ/",
+      "pos": "動詞 v.",
+      "zh": "帶來",
+      "sentence": "Bring your book.",
+      "sentenceZh": "帶你的書來。",
+      "forms": {
+        "ing": "bringing",
+        "past": "brought",
+        "pp": "brought"
+      }
+    },
+    {
+      "id": "word-0213",
+      "word": "plastic",
+      "ipa": "/ˈplæstɪk/",
+      "pos": "名詞 n.／形容詞 adj.",
+      "zh": "塑膠的；塑膠",
+      "sentence": "This bag is plastic.",
+      "sentenceZh": "這個袋子是塑膠的。"
+    },
+    {
+      "id": "word-0214",
+      "word": "keep",
+      "ipa": "/kiːp/",
+      "pos": "動詞 v.",
+      "zh": "保留；保持",
+      "sentence": "Keep your room clean.",
+      "sentenceZh": "保持你的房間乾淨。",
+      "forms": {
+        "ing": "keeping",
+        "past": "kept",
+        "pp": "kept"
+      }
+    },
+    {
+      "id": "word-0215",
+      "word": "throw away",
+      "ipa": "/θroʊ əˈweɪ/",
+      "pos": "動詞片語 v. phr.",
+      "zh": "扔掉",
+      "sentence": "Throw away the trash.",
+      "sentenceZh": "把垃圾丟掉。",
+      "forms": {
+        "ing": "throwing away",
+        "past": "threw away",
+        "pp": "thrown away"
+      }
+    },
+    {
+      "id": "word-0216",
+      "word": "start",
+      "ipa": "/stɑːrt/",
+      "pos": "動詞 v.",
+      "zh": "開始",
+      "sentence": "Class starts now.",
+      "sentenceZh": "課現在開始。",
+      "forms": {
+        "ing": "starting",
+        "past": "started",
+        "pp": "started"
+      }
+    },
+    {
+      "id": "word-0217",
+      "word": "begin",
+      "ipa": "/bɪˈɡɪn/",
+      "pos": "動詞 v.",
+      "zh": "開始",
+      "sentence": "The game begins.",
+      "sentenceZh": "遊戲開始了。",
+      "forms": {
+        "ing": "beginning",
+        "past": "began",
+        "pp": "begun"
+      }
+    },
+    {
+      "id": "word-0218",
+      "word": "elementary school",
+      "ipa": "/ˌeləˈmentəri skuːl/",
+      "pos": "名詞 n.",
+      "zh": "小學",
+      "sentence": "I go to elementary school.",
+      "sentenceZh": "我上小學。"
+    },
+    {
+      "id": "word-0219",
+      "word": "hate",
+      "ipa": "/heɪt/",
+      "pos": "動詞 v.",
+      "zh": "討厭；憎恨",
+      "sentence": "I hate bugs.",
+      "sentenceZh": "我討厭蟲子。",
+      "forms": {
+        "ing": "hating",
+        "past": "hated",
+        "pp": "hated"
+      }
+    },
+    {
+      "id": "word-0220",
+      "word": "amazing",
+      "ipa": "/əˈmeɪzɪŋ/",
+      "pos": "形容詞 adj.",
+      "zh": "令人驚喜的",
+      "sentence": "The show is amazing.",
+      "sentenceZh": "這場表演令人驚喜。"
+    },
+    {
+      "id": "word-0221",
+      "word": "law",
+      "ipa": "/lɔː/",
+      "pos": "名詞 n.",
+      "zh": "法律",
+      "sentence": "We must follow the law.",
+      "sentenceZh": "我們必須遵守法律。"
+    },
+    {
+      "id": "word-0222",
+      "word": "-free",
+      "ipa": "/friː/",
+      "pos": "字尾 suffix",
+      "zh": "無...的",
+      "sentence": "This park is plastic-free.",
+      "sentenceZh": "這個公園無塑膠。"
+    },
+    {
+      "id": "word-0223",
+      "word": "kind",
+      "ipa": "/kaɪnd/",
+      "pos": "名詞 n.／形容詞 adj.",
+      "zh": "種類；友善的",
+      "sentence": "She is kind.",
+      "sentenceZh": "她很友善。"
+    },
+    {
+      "id": "word-0224",
+      "word": "program",
+      "ipa": "/ˈproʊɡræm/",
+      "pos": "名詞 n.",
+      "zh": "計畫",
+      "sentence": "This program helps kids.",
+      "sentenceZh": "這個計畫幫助孩子。"
+    },
+    {
+      "id": "word-0225",
+      "word": "buy",
+      "ipa": "/baɪ/",
+      "pos": "動詞 v.",
+      "zh": "買",
+      "sentence": "I buy a book.",
+      "sentenceZh": "我買一本書。",
+      "forms": {
+        "ing": "buying",
+        "past": "bought",
+        "pp": "bought"
+      }
+    },
+    {
+      "id": "word-0226",
+      "word": "hospital",
+      "ipa": "/ˈhɑːspɪtəl/",
+      "pos": "名詞 n.",
+      "zh": "醫院",
+      "sentence": "He is in the hospital.",
+      "sentenceZh": "他在醫院。"
+    },
+    {
+      "id": "word-0227",
+      "word": "package",
+      "ipa": "/ˈpækɪdʒ/",
+      "pos": "名詞 n.",
+      "zh": "包裝；包裹",
+      "sentence": "This package is heavy.",
+      "sentenceZh": "這個包裹很重。"
+    },
+    {
+      "id": "word-0228",
+      "word": "poor",
+      "ipa": "/pʊr/",
+      "pos": "形容詞 adj.",
+      "zh": "貧窮得；可憐的",
+      "sentence": "The poor dog needs help.",
+      "sentenceZh": "那隻可憐的狗需要幫助。"
+    },
+    {
+      "id": "word-0229",
+      "word": "stop",
+      "ipa": "/stɑːp/",
+      "pos": "動詞 v.",
+      "zh": "停止",
+      "sentence": "Please stop here.",
+      "sentenceZh": "請在這裡停下來。",
+      "forms": {
+        "ing": "stopping",
+        "past": "stopped",
+        "pp": "stopped"
+      }
+    },
+    {
+      "id": "word-0230",
+      "word": "collect",
+      "ipa": "/kəˈlekt/",
+      "pos": "動詞 v.",
+      "zh": "收集",
+      "sentence": "We collect bottles.",
+      "sentenceZh": "我們收集瓶子。",
+      "forms": {
+        "ing": "collecting",
+        "past": "collected",
+        "pp": "collected"
+      }
+    },
+    {
+      "id": "word-0231",
+      "word": "half",
+      "ipa": "/hæf/",
+      "pos": "名詞 n.／形容詞 adj.",
+      "zh": "一半（的）；二分之一",
+      "sentence": "I ate half the pie.",
+      "sentenceZh": "我吃了半個派。"
+    },
+    {
+      "id": "word-0232",
+      "word": "million",
+      "ipa": "/ˈmɪljən/",
+      "pos": "名詞 n.",
+      "zh": "百萬",
+      "sentence": "A million is a big number.",
+      "sentenceZh": "一百萬是很大的數字。"
+    },
+    {
+      "id": "word-0233",
+      "word": "lead",
+      "ipa": "/liːd/",
+      "pos": "動詞 v.",
+      "zh": "領導",
+      "sentence": "She can lead the team.",
+      "sentenceZh": "她可以領導團隊。",
+      "forms": {
+        "ing": "leading",
+        "past": "led",
+        "pp": "led"
+      }
+    },
+    {
+      "id": "word-0234",
+      "word": "one of a kind",
+      "ipa": "/wʌn əv ə kaɪnd/",
+      "pos": "片語 phr.",
+      "zh": "獨一無二",
+      "sentence": "This gift is one of a kind.",
+      "sentenceZh": "這份禮物是獨一無二的。"
+    }
+  ]
+}
